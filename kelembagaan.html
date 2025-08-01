@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kelembagaan Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="border-b-2 border-white font-bold">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10 font-bold">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+    <!-- Konten Profil -->
+    <main class="space-y-4 px-4 md:px-8 py-16 bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- Hero Section -->
+        <section
+            class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-[#fdf2f2] via-[#fffafa] to-[#f6f6f6] p-10 md:p-16 shadow-lg max-w-6xl mx-auto">
+            <!-- Ornamen background bulatan -->
+            <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#9b1e15]/10 rounded-full z-0"></div>
+            <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-[#9b1e15]/5 rounded-full z-0"></div>
+
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-10">
+                <!-- Icon atau Ilustrasi -->
+                <div class="flex-shrink-0">
+                    <img src="gambar/struktur-organisasi.png" alt="Ilustrasi Desa"
+                        class="w-32 h-32 md:w-40 md:h-40 object-contain drop-shadow-xl" />
+                </div>
+
+                <!-- Teks -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-[#9b1e15] mb-4 leading-tight">
+                        Struktur Organisasi Pemerintah Desa
+                    </h2>
+                    <p class="text-gray-700 text-lg leading-relaxed max-w-2xl">
+                        Pemerintah Desa Jatinom terdiri dari perangkat yang berdedikasi dalam menyelenggarakan pelayanan
+                        kepada masyarakat.
+                        Inilah gambaran struktur organisasi resmi yang menjadi fondasi kerja kami.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Struktur Organisasi Pemerintah Desa -->
+        <section class="max-w-5xl mx-auto text-center space-y-8 pt-20">
+            <div>
+                <h2 class="text-3xl md:text-4xl font-bold text-[#9b1e15] mb-4">
+                    Struktur Organisasi Pemerintah Desa
+                </h2>
+                <p class="text-lg text-gray-700">
+                    Pemerintah Desa Jatinom memiliki struktur kelembagaan yang mendukung pelayanan kepada masyarakat
+                    secara efektif dan efisien. Berikut adalah bagan organisasi resmi yang menjelaskan peran serta
+                    hubungan antar perangkat desa.
+                </p>
+            </div>
+
+            <!-- Gambar Bagan Organisasi -->
+            <div class="flex justify-center">
+                <img src="gambar/strukturorganisasi-kelembagaan.png" alt="Struktur Organisasi Desa Jatinom"
+                    class="rounded-lg shadow-lg w-full max-w-4xl object-contain">
+            </div>
+        </section>
+
+        <!-- Section: Lembaga Pemerintahan -->
+        <section class="max-w-5xl mx-auto pt-20 space-y-10 px-4">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-4">Lembaga Pemerintahan</h2>
+                <p class="text-gray-700 text-lg">
+                    Selain pemerintah desa, terdapat berbagai lembaga yang berperan aktif dalam membantu pembangunan dan
+                    pemberdayaan masyarakat.
+                </p>
+            </div>
+
+            <!-- Daftar LKD Redesain -->
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- RT/RW -->
+                <div
+                    class="flex items-start bg-white border border-gray-100 shadow-md rounded-xl p-5 space-x-4 hover:shadow-lg transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/rtrw.png" alt="Ikon BPD" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#9b1e15]">Rukun Tetangga (RT) / Rukun Warga (RW)</h3>
+                        <p class="text-sm text-gray-600 mt-1">Berperan dalam pelayanan dasar, koordinasi warga, dan
+                            menjaga ketertiban lingkungan.</p>
+                    </div>
+                </div>
+
+                <!-- LKD -->
+                <div
+                    class="flex items-start bg-white border border-gray-100 shadow-md rounded-xl p-5 space-x-4 hover:shadow-lg transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/lkd.png" alt="Ikon LPMD" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#9b1e15]">Lembaga Kemasyarakatan Desa (LKD)
+                        </h3>
+                        <p class="text-sm text-gray-600 mt-1">Wadah partisipasi masyarakat dalam perencanaan,
+                            pelaksanaan,
+                            dan pengawasan pembangunan serta pemberdayaan di tingkat desa.</p>
+                    </div>
+                </div>
+
+                <!-- PKK -->
+                <div
+                    class="flex items-start bg-white border border-gray-100 shadow-md rounded-xl p-5 space-x-4 hover:shadow-lg transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/pkk.png" alt="Ikon PKK" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#9b1e15]">PKK Desa</h3>
+                        <p class="text-sm text-gray-600 mt-1">Organisasi wanita desa yang fokus pada kesejahteraan
+                            keluarga dan sosial.</p>
+                    </div>
+                </div>
+
+                <!-- Karang Taruna -->
+                <div
+                    class="flex items-start bg-white border border-gray-100 shadow-md rounded-xl p-5 space-x-4 hover:shadow-lg transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/karangtaruna.png" alt="Ikon Karang Taruna" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#9b1e15]">Karang Taruna</h3>
+                        <p class="text-sm text-gray-600 mt-1">Wadah generasi muda desa untuk berorganisasi dan
+                            berkontribusi dalam kegiatan sosial.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Statistik Kelembagaan -->
+        <section class="max-w-6xl mx-auto px-4 md:px-6 pt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-4">Statistik Kelembagaan</h2>
+                <p class="text-gray-700 text-lg">
+                    Berikut adalah data ringkas mengenai kelembagaan yang mendukung jalannya pemerintahan dan
+                    pembangunan Desa Jatinom.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <!-- Item 1 -->
+                <div
+                    class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/perangkatdesaaktif.png" alt="Ikon Perangkat Desa" class="w-12 h-12 mb-4" />
+                    <div class="text-4xl font-bold text-[#9b1e15]">13</div>
+                    <p class="mt-2 text-sm text-gray-600">Perangkat Desa Aktif</p>
+                </div>
+
+                <!-- Item 2 -->
+                <div
+                    class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/lembagakemasyarakatan.png" alt="Ikon Lembaga" class="w-12 h-12 mb-4" />
+                    <div class="text-4xl font-bold text-[#9b1e15]">9</div>
+                    <p class="mt-2 text-sm text-gray-600">Lembaga Kemasyarakatan</p>
+                </div>
+
+                <!-- Item 3 -->
+                <div
+                    class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/kegiatankelembagaan.png" alt="Ikon Kegiatan" class="w-12 h-12 mb-4" />
+                    <div class="text-4xl font-bold text-[#9b1e15]">17</div>
+                    <p class="mt-2 text-sm text-gray-600">Kegiatan Kelembagaan / Tahun</p>
+                </div>
+
+                <!-- Item 4 -->
+                <div
+                    class="bg-white shadow-md rounded-xl p-6 flex flex-col items-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/fasilitasinfrastruktur.png" alt="Ikon Infrastruktur" class="w-12 h-12 mb-4" />
+                    <div class="text-4xl font-bold text-[#9b1e15]">3</div>
+                    <p class="mt-2 text-sm text-gray-600">Fasilitas Infrastruktur</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section: Kegiatan Kelembagaan -->
+        <section class="max-w-6xl mx-auto px-4 pt-20 space-y-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-4">Kegiatan Kelembagaan</h2>
+                <p class="text-gray-700 text-lg">
+                    Dokumentasi kegiatan yang dilakukan oleh berbagai lembaga di Desa Jatinom dalam rangka pemberdayaan
+                    masyarakat dan pembangunan desa.
+                </p>
+            </div>
+
+            <!-- Galeri Slider -->
+            <div class="relative">
+                <div class="overflow-x-auto flex gap-6 scroll-smooth pb-4 pt-4 p-2" style="scrollbar-width: none;">
+                    <!-- Item 1 -- Foto nya pakai foto yang sama dngan di Beranda, hati hati kalau hapus foto di Beranda -->
+                    <div
+                        class="min-w-[250px] bg-white rounded-xl shadow-md border border-gray-100
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/posyandu-cekkesehatan-beranda.jpg" alt="Kegiatan Posyandu"
+                            class="w-full h-44 object-cover rounded-t-xl" />
+                        <div class="p-4">
+                            <h4 class="text-sm font-semibold text-[#9b1e15] mb-1">Kegiatan Posyandu</h4>
+                            <p class="text-xs text-gray-600">Pengecekan kesehatan rutin oleh kader Posyandu dan warga
+                                desa.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -- Foto nya pakai foto yang sama dngan di Beranda, hati hati kalau hapus foto di Beranda -->
+                    <div
+                        class="min-w-[250px] bg-white rounded-xl shadow-md border border-gray-100
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/arisan-ibupkk-beranda.jpg" alt="Arisan PKK"
+                            class="w-full h-44 object-cover rounded-t-xl" />
+                        <div class="p-4">
+                            <h4 class="text-sm font-semibold text-[#9b1e15] mb-1">Arisan PKK</h4>
+                            <p class="text-xs text-gray-600">Kader PKK sedang mengadakan arisan sekaligus membahas
+                                agenda
+                                untuk perayaan acara Hari Kemerdekaan Indonesia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -- Foto nya pakai foto yang sama dngan di Beranda, hati hati kalau hapus foto di Beranda -->
+                    <div
+                        class="min-w-[250px] bg-white rounded-xl shadow-md border border-gray-100
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/rapatkarangtaruna-beranda.jpg" alt="Rapat Karang Taruna"
+                            class="w-full h-44 object-cover rounded-t-xl" />
+                        <div class="p-4">
+                            <h4 class="text-sm font-semibold text-[#9b1e15] mb-1">Rapat Karang Taruna</h4>
+                            <p class="text-xs text-gray-600">Karang Taruna Dusun Jatinom mengadakan rapat untuk membahas
+                                rencana perayaan Hari Kemerdekaan Indonesia.</p>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -- Foto nya pakai foto yang sama dngan di Beranda, hati hati kalau hapus foto di Beranda -->
+                    <div
+                        class="min-w-[250px] bg-white rounded-xl shadow-md border border-gray-100
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/pengecatanjalan-beranda.jpg" alt="Pengecatan Jalan"
+                            class="w-full h-44 object-cover rounded-t-xl" />
+                        <div class="p-4">
+                            <h4 class="text-sm font-semibold text-[#9b1e15] mb-1">Pengecatan Jalan</h4>
+                            <p class="text-xs text-gray-600">Karang Taruna Dusun Jatinom sedang melakukan pengecatan
+                                jalan
+                                dalam rangka memperingati Hari Kemerdekaan Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section: Infrastruktur Kelembagaan -->
+        <section class="max-w-6xl mx-auto px-4 pt-20 space-y-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-4">Infrastruktur Kelembagaan</h2>
+                <p class="text-gray-700 text-lg">
+                    Desa Jatinom memiliki fasilitas fisik yang menunjang kelancaran penyelenggaraan pemerintahan dan
+                    kegiatan kelembagaan masyarakat.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/kantorkepaladesa.png" alt="Ikon Kantor Desa" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Kantor Kepala Desa</h4>
+                        <p class="text-sm text-gray-600">Pusat administrasi dan pelayanan publik utama di Desa Jatinom.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/balaidesa.png" alt="Ikon Balai Desa" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Balai Desa</h4>
+                        <p class="text-sm text-gray-600">Tempat pertemuan warga dan pusat penyelenggaraan musyawarah
+                            desa.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/posyandu.png" alt="Ikon Posyandu" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Posyandu</h4>
+                        <p class="text-sm text-gray-600">Sarana pelayanan kesehatan ibu dan anak secara berkala.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/gedungpkk.png" alt="Ikon Gedung PKK" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Gedung PKK</h4>
+                        <p class="text-sm text-gray-600">Tempat kegiatan pemberdayaan perempuan dan kesejahteraan
+                            keluarga.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/lapangan.png" alt="Ikon Lapangan Serbaguna" class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Lapangan Serbaguna</h4>
+                        <p class="text-sm text-gray-600">Fasilitas olahraga dan kegiatan sosial masyarakat.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="flex items-start bg-white border border-gray-200 rounded-xl shadow-md p-6 space-x-4
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/sekretariatkarangtaruna.png" alt="Ikon Sekretariat Karang Taruna"
+                        class="w-12 h-12 object-contain" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Kepengurusan Karang Taruna</h4>
+                        <p class="text-sm text-gray-600">Pusat koordinasi kegiatan kepemudaan dan kreativitas remaja
+                            desa.</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section: Realisasi APBDes -->
+        <section class="max-w-6xl mx-auto px-4 md:px-6 pt-20 pb-16 space-y-8">
+            <div class="text-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-[#9b1e15] mb-4">Realisasi APBDes</h2>
+                <p class="text-gray-700 text-lg">
+                    Dokumentasi realisasi Anggaran Pendapatan dan Belanja Desa (APBDes) tahun berjalan, sebagai bentuk
+                    transparansi dan akuntabilitas kepada masyarakat.
+                </p>
+            </div>
+
+            <!-- Konten Realisasi APBDES (Tata letak zigzag) -->
+            <div class="space-y-16">
+                <!-- Item 1 -->
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="gambar/realisasiapbdes-kelembagaan.jpg" alt="Realisasi APBDes 1"
+                        class="w-full md:w-1/2 h-72 object-cover rounded-xl shadow-md cursor-pointer"
+                        onclick="showPreview(this.src)" />
+                    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg md:w-1/2">
+                        <h4 class="text-xl font-bold text-[#9b1e15] mb-2">Realisasi APBDes 2024</h4>
+                        <p class="text-gray-700 text-sm">
+                            Infografis realisasi ABPDes tahun 2024, Desa Jatinom, Kecamatan Sidoharjo. <br>
+                            <br> <em>Klik pada gambar di samping untuk melihat lebih detail.</em>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 (dibalik arah) -->
+                <!-- Hapus TAG komen kalau mau menambahkan list 
+                <div class="flex flex-col md:flex-row-reverse items-center gap-8">
+                    <img src="gambar/rehabilitasiposyandu-kelembagaan.jpg" alt="Realisasi APBDes 2"
+                        class="w-full md:w-1/2 h-72 object-cover rounded-xl shadow-md" />
+                    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg md:w-1/2">
+                        <h4 class="text-xl font-bold text-[#9b1e15] mb-2">Rehabilitasi Posyandu</h4>
+                        <p class="text-gray-700 text-sm">
+                            Renovasi bangunan dan penyediaan alat kesehatan untuk Posyandu Mawar di RT 03 RW 02.
+                        </p>
+                    </div>
+                </div>
+                -->
+
+                <!-- Item 3 -->
+                <!-- Hapus TAG komen kalau mau menambahkan list 
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <img src="gambar/lampujalan-kelembagaan.jpg" alt="Realisasi APBDes 3"
+                        class="w-full md:w-1/2 h-72 object-cover rounded-xl shadow-md" />
+                    <div class="bg-white/70 backdrop-blur-md p-6 rounded-xl shadow-lg md:w-1/2">
+                        <h4 class="text-xl font-bold text-[#9b1e15] mb-2">Pengadaan Lampu Jalan</h4>
+                        <p class="text-gray-700 text-sm">
+                            Pemasangan 18 titik lampu penerangan jalan umum di sepanjang poros utama desa untuk
+                            meningkatkan keamanan malam hari.
+                        </p>
+                    </div>
+                </div>
+                -->
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa
+                        Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+
+    <!-- Modal Preview Gambar -->
+    <div id="imagePreviewModal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm hidden z-50 flex items-center justify-center">
+        <div class="relative max-w-3xl w-full px-4">
+            <button onclick="closePreview()"
+                class="absolute -top-4 -right-4 text-white bg-[#9b1e15] hover:bg-red-700 rounded-full w-10 h-10 flex items-center justify-center shadow-lg text-xl z-50">
+                &times;
+            </button>
+            <img id="previewImage" src="" alt="Preview Gambar"
+                class="max-h-[90vh] mx-auto rounded shadow-lg border-4 border-white">
+        </div>
+    </div>
+
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Preview gambar Realisasi APBDes
+        const modal = document.getElementById('imagePreviewModal');
+        const previewImage = document.getElementById('previewImage');
+
+        function showPreview(src) {
+            previewImage.src = src;
+            modal.classList.remove('hidden');
+        }
+
+        function closePreview() {
+            modal.classList.add('hidden');
+            previewImage.src = '';
+        }
+
+        // Tutup modal jika klik di luar gambar
+        modal.addEventListener('click', function (e) {
+            if (e.target === modal) {
+                closePreview();
+            }
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KKNT-IPB 2025 Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+
+        .filter-btn.active {
+            background-color: #9b1e15;
+            color: white !important;
+            border-color: #9b1e15;
+        }
+    </style>
+
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="border-b-2 border-white font-bold">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1 font-bold">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- Konten KKNT IPB 2025 -->
+    <main class="space-y-12 md bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- HERO -->
+        <section class="bg-gradient-to-br from-[#fdf2f2] to-white py-20 px-6">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+
+                <!-- KIRI: KOTAK LOGO -->
+                <div class="flex flex-col items-center md:items-start">
+                    <div
+                        class="bg-white rounded-xl shadow-md px-6 py-6 w-full max-w-sm flex flex-col items-center space-y-4 border border-red-100">
+                        <div class="flex space-x-10 justify-center">
+                            <img src="gambar/logo-ipb.png" alt="Logo IPB"
+                                class="h-20 max-h-[80px] w-auto object-contain" loading="lazy" />
+                            <img src="gambar/logo-kknt.png" alt="Logo KKNT"
+                                class="h-20 max-h-[80px] w-auto object-contain" loading="lazy" />
+                        </div>
+                        <p class="text-sm text-gray-600 text-center">
+                            Program Kolaborasi Mahasiswa IPB bersama Masyarakat Desa Jatinom dalam rangka KKNT 2025
+                        </p>
+                    </div>
+                </div>
+
+                <!-- KANAN: TEKS -->
+                <div class="text-center md:text-left">
+                    <h2 class="text-4xl md:text-5xl font-extrabold text-[#9b1e15] leading-tight mb-4">
+                        KKNT IPB 2025 di Desa Jatinom
+                    </h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">
+                        Mewujudkan desa digital dan mandiri melalui inovasi, literasi, dan penguatan potensi
+                        masyarakat berbasis sumber daya lokal.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Program Kerja -->
+        <section class="max-w-6xl mx-auto py-16 px-6">
+            <h3 class="text-3xl font-bold text-[#9b1e15] text-center mb-12">Press Release Program Kerja</h3>
+
+            <div class="grid gap-10 lg:grid-cols-2">
+
+                <!-- 1. NIB dan Legalitas Usaha -->
+                <div
+                    class="bg-white rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/" class="w-full h-48 object-cover rounded-t-xl"
+                        alt="NIB">
+                    <div class="p-6 space-y-3">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] flex items-center gap-2">📄 Pendampingan
+                            Pembuatan NIB</h4>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                        <p class="text-gray-700 text-sm">Membantu pelaku UMKM membuat legalitas usaha berupa
+                            NIB agar dapat mengakses fasilitas pemerintah.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Sasaran:</strong> Pelaku UMKM dan warga pemilik usaha informal</li>
+                            <li><strong>Metode:</strong> Edukasi door-to-door, pendampingan langsung input OSS</li>
+                        </ul>
+                        <a href="#galeri-container"
+                            class="inline-block mt-4 bg-[#9b1e15] text-white text-sm px-4 py-2 rounded hover:bg-red-800 transition">Lihat
+                            Dokumentasi</a>
+                    </div>
+                </div>
+
+                <!-- 2. MPASI -->
+                <div
+                    class="bg-white rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="https://source.unsplash.com/600x300/?baby,food,nutrition" class="w-full h-48 object-cover rounded-t-xl"
+                        alt="MPASI">
+                    <div class="p-6 space-y-3">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] flex items-center gap-2">🍼 Sosialisasi MPASI
+                        </h4>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                        <p class="text-gray-700 text-sm">Peningkatan pengetahuan ibu-ibu tentang MP-ASI yang bergizi dan
+                            terjangkau.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Sasaran:</strong> Ibu balita, kader posyandu, dan PKK</li>
+                            <li><strong>Metode:</strong> Demo masak, leaflet MPASI lokal, penyuluhan interaktif</li>
+                        </ul>
+                        <a href="#galeri-container"
+                            class="inline-block mt-4 bg-[#9b1e15] text-white text-sm px-4 py-2 rounded hover:bg-red-800 transition">Lihat
+                            Dokumentasi</a>
+                    </div>
+                </div>
+
+                <!-- 3. Teh Kompos dan Mineral Block -->
+                <div
+                    class="bg-white rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="https://source.unsplash.com/600x300/?compost,agriculture" class="w-full h-48 object-cover rounded-t-xl"
+                        alt="Teh Kompos">
+                    <div class="p-6 space-y-3">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] flex items-center gap-2">🌱 Teh Kompos & Mineral
+                            Block</h4>
+                        <span class="inline-block text-xs bg-lime-100 text-lime-700 px-2 py-0.5 rounded">Pertanian dan
+                            Peternakan</span>
+                        <p class="text-gray-700 text-sm">Pemberdayaan petani dan peternak melalui pemanfaatan limbah
+                            organik dan edukasi pembuatan Mineral Block.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Sasaran:</strong> Petani dan peternak lokal</li>
+                            <li><strong>Metode:</strong> Praktik lapangan & pelatihan kelompok tani</li>
+                        </ul>
+                        <a href="#galeri-container"
+                            class="inline-block mt-4 bg-[#9b1e15] text-white text-sm px-4 py-2 rounded hover:bg-red-800 transition">Lihat
+                            Dokumentasi</a>
+                    </div>
+                </div>
+
+                <!-- 4. Stevia -->
+                <div
+                    class="bg-white rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="https://source.unsplash.com/600x300/?stevia,plant" class="w-full h-48 object-cover rounded-t-xl"
+                        alt="Stevia">
+                    <div class="p-6 space-y-3">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] flex items-center gap-2">🍃 Stevia: Tanam & Olah
+                        </h4>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                        <p class="text-gray-700 text-sm">Pengenalan alternatif tanaman sehat yang bernilai ekonomi
+                            tinggi bagi petani lokal, sekaligus sebagai pengganti gula.</p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Sasaran:</strong> Kelompok tani & ibu PKK</li>
+                            <li><strong>Metode:</strong> Demo tanam dan pengolahan stevia sebagai pemanis alami</li>
+                        </ul>
+                        <a href="#galeri-container"
+                            class="inline-block mt-4 bg-[#9b1e15] text-white text-sm px-4 py-2 rounded hover:bg-red-800 transition">Lihat
+                            Dokumentasi</a>
+                    </div>
+                </div>
+
+                <!-- 5. Digital Profiling Desa -->
+                <div
+                    class="bg-white rounded-xl shadow hover:shadow-2xl hover:scale-[1.02] 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30 lg:col-span-2">
+                    <img src="https://source.unsplash.com/1200x400/?map,technology,village"
+                        class="w-full h-56 object-cover rounded-t-xl" alt="Digital Profiling Desa">
+                    <div class="p-6 space-y-3">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] flex items-center gap-2">🗺️ Digital Profiling
+                            Desa</h4>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                        <p class="text-gray-700 text-sm">
+                            Inisiatif untuk mengenali dan memetakan potensi desa secara digital guna mendukung
+                            perencanaan pembangunan dan keterbukaan informasi.
+                        </p>
+                        <ul class="text-sm text-gray-600 list-disc list-inside">
+                            <li><strong>Kegiatan:</strong> Pembuatan Peta Potensi Desa berbasis data spasial dan visual
+                            </li>
+                            <li><strong>Kegiatan:</strong> Pengembangan Website Resmi Desa Jatinom sebagai media
+                                informasi dan layanan publik</li>
+                        </ul>
+                        <a href="#galeri-container"
+                            class="inline-block mt-4 bg-[#9b1e15] text-white text-sm px-4 py-2 rounded hover:bg-red-800 transition">Lihat
+                            Dokumentasi</a>
+                    </div>
+                </div>
+
+            </div>
+
+            </div>
+        </section>
+
+
+        <!-- CAPAIAN -->
+        <section class="bg-gradient-to-b from-[#fffaf0] to-[#fefefe] py-20 px-6">
+            <div class="max-w-6xl mx-auto text-center mb-12">
+                <h3 class="text-3xl font-bold text-[#9b1e15] mb-3">Capaian Program Kerja</h3>
+                <p class="text-gray-700 text-lg">Berikut indikator keberhasilan program yang telah dilaksanakan.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-5xl mx-auto text-center">
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">1 Website</div>
+                    <p class="text-gray-600 text-sm">Website desa aktif dan dikelola mandiri</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">17 UMKM</div>
+                    <p class="text-gray-600 text-sm">Berhasil dibuatkan NIB</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">200+ Warga</div>
+                    <p class="text-gray-600 text-sm">Mengikuti pelatihan dan penyuluhan</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">1 Peta Potensi</div>
+                    <p class="text-gray-600 text-sm">Peta pemetaan potensi desa</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">60+ Mineral Block</div>
+                    <p class="text-gray-600 text-sm">Telah dibagikan kepada peternak</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-4xl font-bold text-[#9b1e15] mb-2">90+ Leaflet</div>
+                    <p class="text-gray-600 text-sm">Berhasil dibagikan kepada warga</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- GALERI DOKUMENTASI -->
+        <section class="py-20 px-6 max-w-6xl mx-auto">
+            <h3 class="text-3xl font-bold text-[#9b1e15] mb-8 text-center">Dokumentasi Kegiatan</h3>
+
+            <!-- FILTER -->
+            <div class="flex flex-wrap justify-center gap-3 mb-10">
+                <button
+                    class="filter-btn px-4 py-1 text-sm font-semibold rounded border border-[#9b1e15] text-[#9b1e15] hover:bg-[#9b1e15] hover:text-white transition active"
+                    data-filter="all">Semua</button>
+
+                <!-- Dropdown Filter -->
+                <select id="kategori-dropdown"
+                    class="text-sm px-3 py-1 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-[#9b1e15] focus:border-[#9b1e15]">
+                    <option value="all">Pilih Kategori</option>
+                    <option value="UMKM">UMKM</option>
+                    <option value="Kesehatan">Kesehatan</option>
+                    <option value="Pertanian dan Peternakan">Pertanian dan Peternakan</option>
+                    <option value="Agro Inovasi">Agro Inovasi</option>
+                    <option value="Digital Profiling">Digital Profiling</option>
+                    <option value="Kemasyarakatan">Kemasyarakatan</option>
+                </select>
+            </div>
+
+            <!-- GRID GALERI -->
+            <div id="galeri-container" class="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+
+                <!-- DOKUM 1 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-25juni.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Penerimaan di Kecamatan Sidoharjo</p>
+                        <p class="text-xs text-gray-500">25 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 2 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-26juni.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi bersama perangkat desa</p>
+                        <p class="text-xs text-gray-500">26 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 3 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-26juni-2.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi bersama Kepala Desa</p>
+                        <p class="text-xs text-gray-500">26 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 4 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-27juni.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Memperingati Tahun Baru Islam</p>
+                        <p class="text-xs text-gray-500">27 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 5 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-28juni.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Mengikuti rapat Karang Taruna</p>
+                        <p class="text-xs text-gray-500">28 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 6 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-30juni.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Lokakarya 1</p>
+                        <p class="text-xs text-gray-500">30 Juni 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 7 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Pertanian dan Peternakan">
+                    <img src="kknt/pertanian-1juli.jpg" alt="Pertanian dan Peternakan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Observasi ke peternak</p>
+                        <p class="text-xs text-gray-500">01 Juli 2025</p>
+                        <span class="inline-block text-xs bg-lime-100 text-lime-700 px-2 py-0.5 rounded">Pertanian dan
+                            Peternakan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 8 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-2juli.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">02 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 9 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Pertanian dan Peternakan">
+                    <img src="kknt/pertanian-3juli.jpg" alt="Pertanian dan Peternakan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi bersama Badan Penyuluhan Pertanian Sidoharjo</p>
+                        <p class="text-xs text-gray-500">03 Juli 2025</p>
+                        <span class="inline-block text-xs bg-lime-100 text-lime-700 px-2 py-0.5 rounded">Pertanian dan
+                            Peternakan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 10 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-3juli.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">03 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 11 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-4juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Berkunjung ke rumah Kepala Dusun</p>
+                        <p class="text-xs text-gray-500">04 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 12 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-4juli-2.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Berkunjung ke rumah Kepala Dusun</p>
+                        <p class="text-xs text-gray-500">04 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 13 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-5juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Sosialisasi Makanan Pendamping ASI</p>
+                        <p class="text-xs text-gray-500">05 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 14 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-6juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kegiatan posyandu dusun</p>
+                        <p class="text-xs text-gray-500">06 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 15 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-6juli.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">06 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 16 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-7juli.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">07 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 17 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-7juli-2.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">07 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 18 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-7juli-3.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">07 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 19 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="UMKM">
+                    <img src="kknt/umkm-7juli-4.jpg" alt="UMKM"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Door-to-door pembuatan NIB</p>
+                        <p class="text-xs text-gray-500">07 Juli 2025</p>
+                        <span class="inline-block text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded">UMKM</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 20 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-9juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kegiatan posyandu dusun</p>
+                        <p class="text-xs text-gray-500">09 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 21 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-10juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kegiatan posyandu dusun</p>
+                        <p class="text-xs text-gray-500">10 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 22 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-11juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kegiatan posyandu dusun</p>
+                        <p class="text-xs text-gray-500">11 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 23 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-12juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pengecekan kesehatan oleh petugas Puskesmas Sidoharjo</p>
+                        <p class="text-xs text-gray-500">12 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 24 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kesehatan">
+                    <img src="kknt/kesehatan-14juli.jpg" alt="Kesehatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kegiatan posyandu dusun</p>
+                        <p class="text-xs text-gray-500">14 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-yellow-100 text-yellow-700 px-2 py-0.5 rounded">Kesehatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 25 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-14juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi bersama Kepala Desa</p>
+                        <p class="text-xs text-gray-500">14 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 26 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-15juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Berkunjung ke rumah Kepala Desa</p>
+                        <p class="text-xs text-gray-500">15 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 27 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Agro Inovasi">
+                    <img src="kknt/agroinovasi-16juli.jpg" alt="Agro Inovasi"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Sosialiasi rencana kegiatan pengolahan stevia</p>
+                        <p class="text-xs text-gray-500">16 Juli 2025</p>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 28 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Pertanian dan Peternakan">
+                    <img src="kknt/pertanian-17juli.jpg" alt="Pertanian dan Peternakan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Sosialisasi Pembuatan Teh Kompos & Mineral Block</p>
+                        <p class="text-xs text-gray-500">17 Juli 2025</p>
+                        <span class="inline-block text-xs bg-lime-100 text-lime-700 px-2 py-0.5 rounded">Pertanian dan
+                            Peternakan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 29 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Agro Inovasi">
+                    <img src="kknt/agroinovasi-17juli.jpg" alt="Agro Inovasi"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pemindahan benih stevia ke media tanam</p>
+                        <p class="text-xs text-gray-500">17 Juli 2025</p>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 30 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-18juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Kunjungan ke SDN 2 Jatinom</p>
+                        <p class="text-xs text-gray-500">18 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 31 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-19juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Mengikuti rapat Karang Taruna</p>
+                        <p class="text-xs text-gray-500">19 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 32 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Agro Inovasi">
+                    <img src="kknt/agroinovasi-20juli.jpg" alt="Agro Inovasi"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Percobaan Pengolahan Stevia</p>
+                        <p class="text-xs text-gray-500">20 Juli 2025</p>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 33 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Agro Inovasi">
+                    <img src="kknt/agroinovasi-21juli.jpg" alt="Agro Inovasi"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pemindahan benih stevia ke media tanam</p>
+                        <p class="text-xs text-gray-500">21 Juli 2025</p>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 34 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Digital Profiling">
+                    <img src="kknt/digital-21juli.jpg" alt="Digital"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi dengan Sekretaris Desa</p>
+                        <p class="text-xs text-gray-500">21 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 35 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Digital Profiling">
+                    <img src="kknt/digital-23juli.jpg" alt="Digital"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pembuatan peta potensi desa</p>
+                        <p class="text-xs text-gray-500">23 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 36 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Agro Inovasi">
+                    <img src="kknt/agroinovasi-24juli.jpg" alt="Agro Inovasi"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Sosialisasi Penanaman & Pengolahan Stevia</p>
+                        <p class="text-xs text-gray-500">24 Juli 2025</p>
+                        <span class="inline-block text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded">Agro
+                            Inovasi</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 37 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Digital Profiling">
+                    <img src="kknt/digital-26juli.jpg" alt="Digital"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pembuatan peta potensi desa</p>
+                        <p class="text-xs text-gray-500">26 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 38 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-27juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pengecatan jalan bersama Karang Taruna</p>
+                        <p class="text-xs text-gray-500">27 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 39 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Digital Profiling">
+                    <img src="kknt/digital-29juli.jpg" alt="Digital"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Diskusi dengan Sekretaris Desa</p>
+                        <p class="text-xs text-gray-500">29 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 40 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Pertanian dan Peternakan">
+                    <img src="kknt/pertanian-29juli.jpg" alt="Pertanian dan Peternakan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Pembagian Mineral Block ke peternak</p>
+                        <p class="text-xs text-gray-500">29 Juli 2025</p>
+                        <span class="inline-block text-xs bg-lime-100 text-lime-700 px-2 py-0.5 rounded">Pertanian dan
+                            Peternakan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 41 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-31juli.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Lokakarya 2 di Kecamatan Sidoharjo</p>
+                        <p class="text-xs text-gray-500">31 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 42 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Kemasyarakatan">
+                    <img src="kknt/kemasyarakatan-31juli-2.jpg" alt="Kemasyarakatan"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Foto bersama Kepala Desa pasca kegiatan Lokakarya 2</p>
+                        <p class="text-xs text-gray-500">31 Juli 2025</p>
+                        <span
+                            class="inline-block text-xs bg-sky-100 text-sky-700 px-2 py-0.5 rounded">Kemasyarakatan</span>
+                    </div>
+                </div>
+
+                <!-- DOKUM 43 -->
+                <div class="galeri-item group overflow-hidden rounded-xl shadow-md transition hover:-translate-y-1 hover:shadow-xl"
+                    data-kategori="Digital Profiling">
+                    <img src="kknt/digital-1agustus.jpg" alt="Website Launch"
+                        class="w-full h-52 object-cover group-hover:scale-105 transition" />
+                    <div class="p-4 text-sm text-center space-y-1">
+                        <p class="font-medium">Penyerahan peta potensi desa</p>
+                        <p class="text-xs text-gray-500">01 Agustus 2025</p>
+                        <span
+                            class="inline-block text-xs bg-indigo-100 text-indigo-700 px-2 py-0.5 rounded">Digital Profiling</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PENUTUP -->
+        <section class="bg-[#f9f9f9] py-16 px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h4 class="text-2xl font-bold text-[#9b1e15] mb-4">Ucapan Terima Kasih</h4>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Terima kasih kepada seluruh warga Desa Jatinom, perangkat desa, serta mitra pendukung yang telah
+                    bekerja sama
+                    dalam mendukung keberhasilan program KKNT-IPB 2025. Semoga kontribusi ini memberikan manfaat jangka
+                    panjang
+                    bagi masyarakat desa.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul id="kontak" class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Script untuk Filter -->
+    <script>
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const galeriItems = document.querySelectorAll('.galeri-item');
+        const dropdown = document.getElementById('kategori-dropdown');
+
+        function filterGaleri(filter) {
+            galeriItems.forEach(item => {
+                const kategori = item.getAttribute('data-kategori');
+                item.classList.toggle('hidden', filter !== 'all' && kategori !== filter);
+            });
+        }
+
+        // Tombol 'Semua'
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+                filterGaleri(filter);
+
+                // Reset dropdown ke default
+                dropdown.value = 'all';
+
+                // Update highlight tombol
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+            });
+        });
+
+        // Dropdown perubahan
+        dropdown.addEventListener('change', (e) => {
+            const selected = e.target.value;
+            filterGaleri(selected);
+
+            // Highlight tombol aktif
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
+    </script>
+
+
+</body>
+
+</html>

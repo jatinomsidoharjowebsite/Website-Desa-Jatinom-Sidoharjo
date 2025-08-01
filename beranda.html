@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+</head>
+
+<body class="text-gray-800">
+
+    <!-- ======= HEADER ======= -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="border-b-2 border-white font-bold">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10 font-bold">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- ======= SECTION: BERANDA ======= -->
+    <main>
+        <section id="beranda"
+            class="relative h-[100vh] bg-cover bg-center flex items-center justify-center px-4 md:px-8"
+            style="background-image: url('gambar/jatinom-beranda.jpeg');">
+            <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+            <div class="relative z-10 text-center text-white max-w-3xl">
+                <h2 class="text-4xl font-bold mb-4">Selamat Datang di Website Resmi</h2>
+                <p class="text-xl font-light mb-6">Desa Jatinom, Kecamatan Sidoharjo, Kabupaten Wonogiri</p>
+                <p class="text-md max-w-xl mx-auto">
+                    Website ini merupakan pusat informasi dan layanan digital Desa Jatinom.
+                    Kami berkomitmen menghadirkan transparansi, partisipasi masyarakat, dan pelayanan yang cepat serta
+                    ramah
+                    untuk seluruh warga.
+                </p>
+            </div>
+        </section>
+
+        <!-- ======= SECTION: SAMBUTAN KEPALA DESA ======= -->
+        <section class="mt-20 px-4 md:px-8 max-w-6xl mx-auto" id="sambutan">
+            <div
+                class="bg-gradient-to-br from-[#fff7f7] to-[#fefefe] shadow-lg ring-1 ring-gray-200 rounded-2xl p-10 flex flex-col md:flex-row gap-10 items-center md:items-start">
+
+                <!-- KIRI: Logo -->
+                <div class="flex-shrink-0 text-center">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Wonogiri"
+                        class="w-52 h-auto mx-auto md:mx-0 mt-3 transform hover:scale-105 transition duration-300 ease-in-out" />
+                </div>
+
+                <!-- KANAN: Isi Sambutan -->
+                <div class="flex-grow">
+                    <h3 class="text-3xl font-extrabold text-[#9b1e15] mb-4">Sambutan Kepala Desa Jatinom</h3>
+                    <p class="text-gray-700 leading-relaxed text-justify text-[17px] mb-6">
+                        Assalamualaikum Warahmatullahi Wabarakatuh.<br /><br />
+                        Dengan penuh rasa syukur kami menghadirkan website resmi Desa Jatinom sebagai media transparansi
+                        dan
+                        pelayanan publik.
+                        Melalui platform ini, masyarakat dapat mengakses informasi desa, melihat layanan yang disediakan
+                        desa,
+                        dan ikut serta
+                        dalam membangun Desa Jatinom yang lebih maju dan sejahtera.<br /><br />
+                        Mari kita jaga dan manfaatkan teknologi ini sebagai wujud kolaborasi antara pemerintah desa dan
+                        masyarakat demi kemajuan bersama.
+                    </p>
+                    <div>
+                        <p class="text-[#9b1e15] font-semibold text-lg">Sartu</p>
+                        <p class="text-sm text-gray-600">Kepala Desa Jatinom</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======= SECTION: BERITA DAN KEGIATAN ======= -->
+        <section class="mt-20 px-4 md:px-0 max-w-6xl mx-auto" id="berita">
+            <h3 class="text-3xl font-bold mb-6 text-[#9b1e15] text-center">Berita & Kegiatan Desa</h3>
+
+            <!-- Scrollable container -->
+            <div class="overflow-x-auto">
+                <div class="flex gap-6 pb-4 snap-x snap-mandatory scroll-smooth px-4 py-2 md:px-6 md:py-4">
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/kondangan-beranda.jpg')">
+                            <img src="gambar/kondangan-beranda.jpg" alt="Acara Kondangan"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Acara Kondangan</h4>
+                            <p class="text-sm text-gray-700">Masyarakat mengikuti acara Kondangan dalam rangka memperingati
+                                Tahun Baru Islam.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/rapatkaderposyandu-beranda.jpg')">
+                            <img src="gambar/rapatkaderposyandu-beranda.jpg" alt="Rapat Kader Posyandu"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Rapat Kader Posyandu</h4>
+                            <p class="text-sm text-gray-700">Ibu-ibu dan Kader Posyandu aktif sedang melakukan kegiatan rapat
+                                bersama.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/posyandu-cekkesehatan-beranda.jpg')">
+                            <img src="gambar/posyandu-cekkesehatan-beranda.jpg" alt="Pengecekan Kesehatan Rutin"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Pengecekan Kesehatan Rutin</h4>
+                            <p class="text-sm text-gray-700">Warga sedang melakukan pengecekan kesehatan rutin di posyandu
+                                salah satu dusun.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/yasinan-beranda.jpeg')">
+                            <img src="gambar/yasinan-beranda.jpeg" alt="Acara Yasinan Rutin"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Acara Yasinan Rutin</h4>
+                            <p class="text-sm text-gray-700">Warga sedang melaksanakan kegiatan yasinan bersama.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/arisan-poktan.jpg')">
+                            <img src="gambar/arisan-poktan.jpg" alt="Arisan Kelompok Tani"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Arisan Kelompok Tani</h4>
+                            <p class="text-sm text-gray-700">Warga anggota Kelompok Tani sedang mengadakan arisan rutinan di salah satu
+                                rumah Kepala Dusun.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/arisan-ibupkk-beranda.jpg')">
+                            <img src="gambar/arisan-ibupkk-beranda.jpg" alt="Arisan PKK"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Arisan PKK</h4>
+                            <p class="text-sm text-gray-700">Kader PKK sedang mengadakan arisan sekaligus membahas agenda
+                                untuk perayaan acara Hari Kemerdekaan Indonesia.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/senamsd-beranda.png')">
+                            <img src="gambar/senamsd-beranda.png" alt="Senam Bersama"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Kegiatan Senam Bersama</h4>
+                            <p class="text-sm text-gray-700">Siswa-siswi SDN 2 Jatinom sedang melaksanakan kegiatan senam pagi.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/sholawatan-beranda.jpeg')">
+                            <img src="gambar/sholawatan-beranda.jpeg" alt="Acara Sholawatan"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Acara Sholawatan</h4>
+                            <p class="text-sm text-gray-700">Ibu-ibu di Dusun Jatinom sedang melaksanakan kegiatan sholawatan setelah yasinan rutin
+                                di salah satu rumah Ketua RT.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/pengecatanjalan-beranda.jpg')">
+                            <img src="gambar/pengecatanjalan-beranda.jpg" alt="Pengecatan Jalan"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Pengecatan Jalan</h4>
+                            <p class="text-sm text-gray-700">Karang Taruna Dusun Jatinom sedang melakukan pengecatan jalan
+                                dalam rangka memperingati Hari Kemerdekaan Indonesia.</p>
+                        </div>
+                    </div>
+
+                    <!-- CARD ITEM -->
+                    <div
+                        class="bg-white rounded-xl shadow-md w-80 flex-shrink-0 snap-start transform transition duration-300 hover:-translate-y-2 hover:shadow-2xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <div class="cursor-pointer overflow-hidden rounded-t-xl"
+                            onclick="showImage('gambar/rapatkarangtaruna-beranda.jpg')">
+                            <img src="gambar/rapatkarangtaruna-beranda.jpg" alt="Rapat Karang Taruna"
+                                class="w-full h-48 object-cover transition duration-500 ease-in-out transform hover:scale-105" />
+                        </div>
+                        <div class="p-4">
+                            <h4
+                                class="font-semibold text-lg text-[#9b1e15] hover:underline mb-2 transition duration-300">
+                                Rapat Karang Taruna</h4>
+                            <p class="text-sm text-gray-700">Karang Taruna Dusun Jatinom mengadakan rapat untuk membahas
+                                rencana perayaan Hari Kemerdekaan Indonesia.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======= SECTION: JELAJAHI DESA ======= -->
+        <section class="mt-20 max-w-6xl mx-auto px-4 md:px-8 flex flex-col md:flex-row gap-10 items-center"
+            id="jelajahi">
+            <!-- KIRI: Pengantar -->
+            <div class="md:w-1/2">
+                <h3 class="text-3xl font-bold text-[#9b1e15] mb-4">Jelajahi Desa</h3>
+                <p class="text-gray-700 leading-relaxed text-lg">
+                    Melalui website ini Anda dapat menjelajahi segala hal yang terkait dengan Desa.
+                    Aspek pemerintahan, penduduk, demografi, potensi Desa, dan juga layanan Desa.
+                </p>
+            </div>
+
+            <!-- KANAN: Tombol Jelajah -->
+            <div class="md:w-1/2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- PROFIL DESA -->
+                <a href="profil.html"
+                    class="group bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center 
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/profil.png" alt="Profil Desa"
+                        class="w-16 h-16 mx-auto mb-3 transition group-hover:scale-110" />
+                    <h4 class="font-semibold text-[#9b1e15] group-hover:underline">Profil Desa</h4>
+                </a>
+
+                <!-- INFOGRAFIS -->
+                <a href="infografis.html"
+                    class="group bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/infografis.png" alt="Infografis"
+                        class="w-16 h-16 mx-auto mb-3 transition group-hover:scale-110" />
+                    <h4 class="font-semibold text-[#9b1e15] group-hover:underline">Infografis</h4>
+                </a>
+
+                <!-- POTENSI -->
+                <a href="potensi.html"
+                    class="group bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/potensi.png" alt="Potensi"
+                        class="w-16 h-16 mx-auto mb-3 transition group-hover:scale-110" />
+                    <h4 class="font-semibold text-[#9b1e15] group-hover:underline">Potensi</h4>
+                </a>
+
+                <!-- KONTAK -->
+                <a href="kontak.html"
+                    class="group bg-white p-5 rounded-xl shadow hover:shadow-lg transition text-center
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/kontak.png" alt="Kontak"
+                        class="w-16 h-16 mx-auto mb-3 transition group-hover:scale-110" />
+                    <h4 class="font-semibold text-[#9b1e15] group-hover:underline">Kontak</h4>
+                </a>
+            </div>
+        </section>
+
+        <!-- ======= SECTION: PETA DESA ======= -->
+        <section class="mt-20 px-4 md:px-8 max-w-6xl mx-auto" id="peta">
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden ring-1 ring-gray-200">
+                <!-- HEADER -->
+                <div class="bg-maroon text-white px-6 py-4 flex items-center gap-3">
+                    <!-- Ikon Lokasi -->
+                    <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" stroke-width="1.5"
+                        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15 10a3 3 0 11-6 0 3 3 0 016 0z">
+                        </path>
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M19.5 10c0 7-7.5 11-7.5 11S4.5 17 4.5 10a7.5 7.5 0 1115 0z"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold">Peta Wilayah Desa Jatinom</h3>
+                </div>
+
+                <!-- ISI PETA -->
+                <div class="p-6 bg-[#fafafa]">
+                    <!-- Deskripsi -->
+                    <p class="text-gray-700 text-lg leading-relaxed mb-4 text-justify">
+                        Berikut adalah gambaran visual wilayah administratif Desa Jatinom, Kecamatan Sidoharjo.
+                        Peta ini menunjukkan batas wilayah, jalan utama, fasilitas umum, dan area pertanian serta
+                        permukiman
+                        warga.
+                    </p>
+
+                    <!-- Gambar Peta -->
+                    <div class="rounded-xl overflow-hidden border border-gray-300 shadow-md hover:shadow-xl transition">
+                        <img src="gambar/peta-jatinom-gmaps.png" alt="Peta Desa Jatinom"
+                            class="w-full object-contain hover:scale-105 transition duration-500" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= SECTION: ADMINISTRASI PENDUDUK ======= -->
+        <section class="mt-20 px-4 md:px-8 max-w-6xl mx-auto" id="administrasi">
+            <div class="text-center mb-10">
+                <h3 class="text-3xl font-bold text-[#9b1e15] mb-2">Administrasi Penduduk</h3>
+                <p class="text-gray-700 text-lg max-w-2xl mx-auto">
+                    Berikut adalah data statistik kependudukan Desa Jatinom, sebagai gambaran umum demografi warga yang
+                    tinggal di wilayah ini.
+                </p>
+            </div>
+
+            <!-- Kotak Statistik -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+
+                <!-- Jumlah Penduduk -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-4xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        3.487
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Jumlah
+                        Penduduk</p>
+                </div>
+
+                <!-- Jumlah Kepala Keluarga -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-4xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        1.226
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Jumlah
+                        Kepala
+                        Keluarga</p>
+                </div>
+
+                <!-- Rasio Jenis Kelamin -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-3xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        1.750 ♂ / 1.737 ♀
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Rasio
+                        Laki-laki & Perempuan</p>
+                </div>
+
+                <!-- Usia Produktif -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-4xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        51%
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Penduduk
+                        Usia
+                        Produktif (18–55 tahun)</p>
+                </div>
+
+                <!-- Anak-anak -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-4xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        21%
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Anak-anak
+                        (0–17 tahun)</p>
+                </div>
+
+                <!-- Lansia -->
+                <div
+                    class="group bg-white p-6 rounded-xl shadow-md text-center transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div
+                        class="text-4xl font-extrabold text-[#9b1e15] mb-2 group-hover:scale-110 transition-transform duration-300">
+                        28%
+                    </div>
+                    <p class="text-gray-600 text-sm group-hover:text-[#9b1e15] transition-colors duration-300">Lansia
+                        (55
+                        tahun ke atas)</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Javascript untuk bagian "Berita dan Kegiatan -->
+    <!-- Modal Preview Gambar -->
+    <div id="modal-preview" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 hidden">
+        <div class="relative max-w-3xl w-full p-4">
+            <button onclick="closeImage()" class="absolute top-2 right-4 text-white text-2xl font-bold">&times;</button>
+            <img id="modal-image" src="" alt="Preview" class="w-full max-h-[80vh] object-contain rounded shadow" />
+        </div>
+    </div>
+
+    <script>
+        function showImage(src) {
+            document.getElementById('modal-image').src = src;
+            document.getElementById('modal-preview').classList.remove('hidden');
+        }
+
+        function closeImage() {
+            const modal = document.getElementById('modal-preview');
+            modal.classList.add('hidden');
+            document.getElementById('modal-image').src = '';
+        }
+
+        // Tutup modal jika klik di luar gambar
+        document.getElementById('modal-preview').addEventListener('click', function (e) {
+            // Pastikan yang diklik adalah latar belakang, bukan konten/modal itu sendiri
+            if (e.target === this) {
+                closeImage();
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>

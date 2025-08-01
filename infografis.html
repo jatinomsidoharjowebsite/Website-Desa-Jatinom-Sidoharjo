@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infografis Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="border-b-2 border-white font-bold">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10 font-bold">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- Konten Infografis -->
+    <main class="space-y-24 px-4 md:px-8 py-16 bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- Infografis Kependudukan -->
+        <section id="infografis-kependudukan" class="max-w-6xl mx-auto space-y-16">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-[#9b1e15]">Infografis Kependudukan</h2>
+                <p class="text-gray-700 text-lg">Informasi distribusi penduduk berdasarkan jenis kelamin, usia, dan
+                    agama.</p>
+            </div>
+
+            <!-- Grid 2 kolom untuk seimbang -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+
+                <!-- Donut: Gender -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Total Penduduk</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Laki-laki vs Perempuan</p>
+                        <div class="w-full h-[250px]">
+                            <canvas id="chartGender"></canvas>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-700 space-y-1 w-40">
+                        <div class="flex justify-between">
+                            <span>Laki-laki:</span><span class="font-semibold">1.750</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Perempuan:</span><span class="font-semibold">1.737</span>
+                        </div>
+                        <div class="border-t mt-2 pt-2 flex justify-between font-medium text-[#9b1e15]">
+                            <span>Total:</span><span>3.487</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pie: Agama -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Berdasarkan Agama</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Distribusi agama mayoritas penduduk</p>
+                        <div class="w-full h-[250px]">
+                            <canvas id="chartReligion"></canvas>
+                        </div>
+                    </div>
+                    <div class="text-sm text-gray-700 space-y-1 w-44">
+                        <div class="flex justify-between">
+                            <span>Islam:</span><span class="font-semibold">3.462</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Kristen:</span><span class="font-semibold">7</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Katolik:</span><span class="font-semibold">7</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Buddha:</span><span class="font-semibold">6</span>
+                        </div>
+                        <div class="border-t mt-2 pt-2 flex justify-between font-medium text-[#9b1e15]">
+                            <span>Total:</span><span>3.482</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Bar Chart: Usia dengan Kotak Keterangan Lebih Besar dan Tengah -->
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <div class="flex flex-col md:flex-row items-center md:items-center justify-start gap-6 md:gap-20">
+
+                    <!-- KIRI: Grafik -->
+                    <div class="flex-1 md:max-w-[600px]">
+                        <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Berdasarkan Kelompok Usia</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Penduduk dibagi menurut kelompok umur</p>
+                        <div class="relative w-full">
+                            <canvas id="chartAge" class="!w-full !h-auto"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- KANAN: Kotak Info -->
+                    <div class="grid grid-cols-2 gap-5 w-full md:w-72 self-center md:ml-4">
+                        <div
+                            class="bg-[#fef2f2] rounded-xl p-5 text-center shadow-sm
+                        transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                            <p class="text-base text-gray-600 font-medium mb-1">Balita <br> (0-5 th)</p>
+                            <p class="text-2xl font-extrabold text-[#9b1e15]">179</p>
+                        </div>
+                        <div
+                            class="bg-[#fef2f2] rounded-xl p-5 text-center shadow-sm
+                        transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                            <p class="text-base text-gray-600 font-medium mb-1">Anak-anak & Remaja</p>
+                            <p class="text-2xl font-extrabold text-[#9b1e15]">695</p>
+                        </div>
+                        <div
+                            class="bg-[#fef2f2] rounded-xl p-5 text-center shadow-sm
+                        transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                            <p class="text-base text-gray-600 font-medium mb-1">Dewasa</p>
+                            <p class="text-2xl font-extrabold text-[#9b1e15]">1.880</p>
+                        </div>
+                        <div
+                            class="bg-[#fef2f2] rounded-xl p-5 text-center shadow-sm
+                        transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                            <p class="text-base text-gray-600 font-medium mb-1">Lansia</p>
+                            <p class="text-2xl font-extrabold text-[#9b1e15]">728</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Section Infografis Pendidikan -->
+        <section id="infografis-pendidikan" class="max-w-6xl mx-auto space-y-10">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-[#9b1e15]">Infografis Pendidikan</h2>
+                <p class="text-gray-700 text-lg">Tingkat pendidikan terakhir warga Desa Jatinom</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Tingkat Pendidikan Terakhir</h3>
+                <p class="text-gray-500 mb-4 text-sm">Jumlah warga berdasarkan pendidikan terakhir</p>
+
+                <!-- Grafik -->
+                <div class="relative w-full h-[360px] mb-8">
+                    <canvas id="chartEducation"></canvas>
+                </div>
+
+                <!-- Keterangan Jumlah -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center text-sm text-gray-800">
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">Sedang Sekolah</p>
+                        <p class="text-lg font-bold">547</p>
+                    </div>
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">SD</p>
+                        <p class="text-lg font-bold">515</p>
+                    </div>
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">SMP</p>
+                        <p class="text-lg font-bold">676</p>
+                    </div>
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">SMA</p>
+                        <p class="text-lg font-bold">847</p>
+                    </div>
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">Diploma</p>
+                        <p class="text-lg font-bold">30</p>
+                    </div>
+                    <div class="bg-[#f0f9ff] p-3 rounded-lg shadow hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#1e3a8a]">S1+</p>
+                        <p class="text-lg font-bold">74</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Section Infografis Pekerjaan & Ekonomi -->
+        <section id="infografis-ekonomi" class="max-w-6xl mx-auto space-y-10">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-[#9b1e15]">Infografis Pekerjaan & Ekonomi</h2>
+                <p class="text-gray-700 text-lg">Jenis pekerjaan dan kegiatan ekonomi utama warga Desa Jatinom</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Pie Chart Pekerjaan + Keterangan -->
+                <div
+                    class="bg-white p-6 rounded-2xl shadow-md flex flex-col md:flex-row items-center justify-between gap-6">
+                    <!-- Grafik -->
+                    <div class="flex-1">
+                        <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Jenis Pekerjaan Warga</h3>
+                        <p class="text-gray-500 mb-4 text-sm">Distribusi pekerjaan utama warga</p>
+                        <div class="w-full h-[250px]">
+                            <canvas id="chartOccupation"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Keterangan Jumlah -->
+                    <div class="text-sm text-gray-700 space-y-1 w-48 md:w-56">
+                        <div class="flex justify-between">
+                            <span>Petani:</span><span class="font-semibold">495</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Pedagang:</span><span class="font-semibold">235</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Karyawan:</span><span class="font-semibold">374</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Wiraswasta:</span><span class="font-semibold">475</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span>Lainnya:</span><span class="font-semibold">161</span>
+                        </div>
+                        <div class="border-t mt-2 pt-2 flex justify-between font-medium text-[#9b1e15]">
+                            <span>Total:</span><span>1.740</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Highlight Jumlah UMKM -->
+                <div
+                    class="bg-gradient-to-r from-[#fef2f2] to-[#fdf6f6] p-6 rounded-2xl shadow-md flex flex-col justify-center items-center text-center space-y-4">
+                    <h3 class="text-xl font-semibold text-[#9b1e15]">Jumlah UMKM Aktif</h3>
+                    <p class="text-gray-600 text-sm">Menunjukkan kegiatan ekonomi skala kecil yang berjalan di desa</p>
+                    <div class="bg-[#9b1e15] text-white text-4xl font-bold py-4 px-8 rounded-full shadow-lg">
+                        60+ UMKM
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section Infografis Pertanian & SDA -->
+        <section id="infografis-pertanian" class="max-w-6xl mx-auto space-y-10">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-[#9b1e15]">Infografis Pertanian & SDA</h2>
+                <p class="text-gray-700 text-lg">Data pertanian dan pemanfaatan sumber daya alam di Desa Jatinom</p>
+            </div>
+
+            <!-- KOMODITAS UTAMA -->
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Komoditas Pertanian Utama</h3>
+                <p class="text-gray-500 mb-4 text-sm">Jenis tanaman utama yang dibudidayakan warga</p>
+
+                <!-- Grafik -->
+                <div class="relative w-full h-[300px] mb-6">
+                    <canvas id="chartKomoditas"></canvas>
+                </div>
+
+                <!-- Keterangan Jumlah -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-gray-700">
+                    <div
+                        class="bg-[#fef2f2] p-4 rounded-lg text-center shadow hover:shadow-md 
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#9b1e15] mb-1">Padi</p>
+                        <p class="text-lg font-bold">142 Ha</p>
+                    </div>
+                    <div
+                        class="bg-[#fef2f2] p-4 rounded-lg text-center shadow hover:shadow-md 
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#9b1e15] mb-1">Singkong</p>
+                        <p class="text-lg font-bold">28 Ha</p>
+                    </div>
+                    <div
+                        class="bg-[#fef2f2] p-4 rounded-lg text-center shadow hover:shadow-md 
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#9b1e15] mb-1">Jagung</p>
+                        <p class="text-lg font-bold">17 Ha</p>
+                    </div>
+                    <div
+                        class="bg-[#fef2f2] p-4 rounded-lg text-center shadow hover:shadow-md 
+            transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <p class="font-semibold text-[#9b1e15] mb-1">Pisang</p>
+                        <p class="text-lg font-bold">3 Ha</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- INFO: LUAS LAHAN -->
+            <div class="flex flex-col md:flex-row justify-between gap-6">
+                <div
+                    class="bg-[#fef2f2] flex-1 p-6 rounded-2xl shadow-md text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <p class="text-sm text-gray-600 font-medium mb-2">Total Luas Lahan Pertanian</p>
+                    <p class="text-4xl font-extrabold text-[#9b1e15]">190 Ha</p>
+                </div>
+                <div
+                    class="bg-[#fef2f2] flex-1 p-6 rounded-2xl shadow-md text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <p class="text-sm text-gray-600 font-medium mb-2">Lahan Irigasi Teknis</p>
+                    <p class="text-4xl font-extrabold text-[#9b1e15]">12 Ha</p>
+                </div>
+                <div
+                    class="bg-[#fef2f2] flex-1 p-6 rounded-2xl shadow-md text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <p class="text-sm text-gray-600 font-medium mb-2">Lahan Tadah Hujan</p>
+                    <p class="text-4xl font-extrabold text-[#9b1e15]">130 Ha</p>
+                </div>
+            </div>
+
+            <!-- HASIL PANEN PER MUSIM -->
+            <div class="bg-white p-6 rounded-2xl shadow-md">
+                <h3 class="text-lg font-semibold text-[#9b1e15] mb-2">Hasil Panen per Musim</h3>
+                <p class="text-gray-500 mb-4 text-sm">Data hasil panen (ton/ha) berdasarkan musim tanam</p>
+                <div class="relative w-full h-[360px]">
+                    <canvas id="chartPanen"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Infografis Layanan Publik -->
+        <section id="infografis-layanan" class="max-w-6xl mx-auto space-y-10">
+            <div class="text-center mb-4">
+                <h2 class="text-3xl font-bold text-[#9b1e15]">Infografis Layanan Publik</h2>
+                <p class="text-gray-700 text-lg">Ketersediaan dan jumlah fasilitas umum di Desa Jatinom</p>
+            </div>
+
+            <!-- Kartu Fasilitas -->
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- 6 Fasilitas -->
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/posyandu.png" class="mx-auto mb-3 w-16 h-16 object-contain" alt="Posyandu" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Posyandu</p>
+                    <p class="text-2xl font-bold">7 Unit</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/balaidesa.png" class="mx-auto mb-3 w-16 h-16 object-contain" alt="Balai Desa" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Balai Desa</p>
+                    <p class="text-2xl font-bold">1 Unit</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/tempatibadah.png" class="mx-auto mb-3 w-16 h-16 object-contain"
+                        alt="Tempat Ibadah" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Tempat Ibadah</p>
+                    <p class="text-2xl font-bold">15 Unit</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/sekolah.png" class="mx-auto mb-3 w-16 h-16 object-contain" alt="Sekolah" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Sekolah</p>
+                    <p class="text-2xl font-bold">3 Unit</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/puskesmas.png" class="mx-auto mb-3 w-16 h-16 object-contain" alt="Puskesmas" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Puskesmas Pembantu</p>
+                    <p class="text-2xl font-bold">2 Unit</p>
+                </div>
+                <div class="bg-white rounded-2xl p-6 shadow-md text-center hover:shadow-xl hover:-translate-y-1 
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/lapangan.png" class="mx-auto mb-3 w-16 h-16 object-contain" alt="Lapangan" />
+                    <p class="text-[#9b1e15] font-semibold mb-1">Lapangan Serbaguna</p>
+                    <p class="text-2xl font-bold">2 Unit</p>
+                </div>
+            </div>
+
+            <!-- Aksesibilitas Layanan Publik -->
+            <div class="bg-white p-6 rounded-2xl shadow-md grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- KIRI: Pie Chart di tengah -->
+                <div class="flex flex-col justify-center h-full space-y-6">
+                    <div>
+                        <h3 class="text-lg font-semibold text-[#9b1e15]">Tingkat Aksesibilitas Layanan</h3>
+                        <p class="text-sm text-gray-500">Persepsi kemudahan warga terhadap akses fasilitas publik</p>
+                    </div>
+
+                    <div class="w-full flex justify-center">
+                        <div class="w-[220px] h-[220px]">
+                            <canvas id="chartAkses"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Legend Kustom -->
+                    <div class="grid grid-cols-3 gap-2 text-sm font-medium text-gray-700 mt-2">
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-[#10b981]"></span>
+                            <span>Mudah (80%)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-[#facc15]"></span>
+                            <span>Sedang (15%)</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <span class="w-3 h-3 rounded-full bg-[#f87171]"></span>
+                            <span>Sulit (5%)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- KANAN: Highlight -->
+                <div
+                    class="bg-[#ecfdf5] p-6 rounded-2xl shadow-md text-center flex flex-col items-center justify-center space-y-4 
+              hover:-translate-y-2 hover:shadow-xl transition transform duration-300 hover:ring-2 hover:ring-[#10b981]/30">
+                    <div class="w-16 h-16 rounded-full bg-[#10b981]/10 flex items-center justify-center">
+                        <svg class="w-8 h-8 text-[#10b981]" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-10.707a1 1 0 00-1.414-1.414L9 9.586 7.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold text-[#10b981]">Akses Mudah</h4>
+                    <p class="text-4xl font-extrabold text-[#10b981]">80%</p>
+                    <p class="text-sm text-gray-600">Mayoritas warga menyatakan fasilitas mudah dijangkau</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <script>
+        // Warna Pie/Donut Chart
+        const palette = ['#9b1e15', '#f87171', '#facc15', '#60a5fa', '#10b981', '#a78bfa'];
+
+        // ---------- Infografis Penduduk
+        // Donut Chart - Gender
+        new Chart(document.getElementById('chartGender'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Laki-laki', 'Perempuan'],
+                datasets: [{
+                    data: [1750, 1737],
+                    backgroundColor: [palette[0], palette[1]],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151', // text-gray-700
+                            font: { weight: '600' }
+                        }
+                    }
+                }
+            }
+        });
+
+        // Bar Chart - Usia
+        new Chart(document.getElementById('chartAge'), {
+            type: 'bar',
+            data: {
+                labels: ['Balita', 'Anak-anak & Remaja', 'Dewasa', 'Lansia'],
+                datasets: [{
+                    label: 'Jumlah Penduduk',
+                    data: [179, 695, 1880, 728],
+                    backgroundColor: '#9b1e15',
+                    borderRadius: 6,
+                    barThickness: 40
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        ticks: { color: '#374151' },
+                        grid: { color: '#e5e7eb' }
+                    },
+                    x: {
+                        ticks: { color: '#374151' },
+                        grid: { display: false }
+                    }
+                },
+                plugins: {
+                    legend: { display: false }
+                }
+            }
+        });
+
+        // Pie Chart - Agama
+        new Chart(document.getElementById('chartReligion'), {
+            type: 'pie',
+            data: {
+                labels: ['Islam', 'Kristen', 'Katolik', 'Buddha'],
+                datasets: [{
+                    data: [3462, 7, 7, 6],
+                    backgroundColor: palette.slice(0, 4)
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151',
+                            font: { weight: '600' }
+                        }
+                    }
+                }
+            }
+        });
+
+        //---------- Infografis Pendidikan
+        // Horizontal Bar Chart - Pendidikan
+        new Chart(document.getElementById('chartEducation'), {
+            type: 'bar',
+            data: {
+                labels: ['Sedang Sekolah', 'SD', 'SMP', 'SMA', 'Diploma', 'S1+'],
+                datasets: [{
+                    label: 'Jumlah Warga',
+                    data: [547, 515, 676, 847, 30, 74],
+                    backgroundColor: '#447d9b',
+                    borderRadius: 6,
+                    barThickness: 22
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return `${context.parsed.x} orang`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#374151' },
+                        grid: { color: '#e5e7eb' }
+                    },
+                    y: {
+                        ticks: { color: '#374151' },
+                        grid: { display: false }
+                    }
+                },
+                animation: false,
+
+            }
+        });
+
+        // ---------- Infografis Pekerjaan
+        // Pie Chart - Jenis Pekerjaan
+        new Chart(document.getElementById('chartOccupation'), {
+            type: 'pie',
+            data: {
+                labels: ['Petani', 'Pedagang', 'Karyawan', 'Wiraswasta', 'Lainnya'],
+                datasets: [{
+                    data: [495, 235, 374, 475, 161],
+                    backgroundColor: palette.slice(0, 5),
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151',
+                            font: { weight: '600' }
+                        }
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return `${context.label}: ${context.parsed} orang`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+        // ---------- Infografis Pertanian & SDA
+        // Bar Horizontal - Komoditas Utama
+        new Chart(document.getElementById('chartKomoditas'), {
+            type: 'bar',
+            data: {
+                labels: ['Padi', 'Singkong', 'Jagung', 'Pisang'],
+                datasets: [{
+                    label: 'Luas Tanam (Ha)',
+                    data: [142, 28, 17, 3],
+                    backgroundColor: ['#9b1e15', '#b91c1c', '#dc2626', '#ef4444'],
+                    borderRadius: 6,
+                    barThickness: 30
+                }]
+            },
+            options: {
+                indexAxis: 'y',
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                return `${context.label}: ${context.parsed.x} Ha`;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        ticks: { color: '#374151' },
+                        grid: { color: '#e5e7eb' }
+                    },
+                    y: {
+                        ticks: { color: '#374151' },
+                        grid: { display: false }
+                    }
+                }
+            }
+        });
+
+
+        // Stacked Bar - Hasil Panen per Musim
+        new Chart(document.getElementById('chartPanen'), {
+            type: 'bar',
+            data: {
+                labels: ['Musim Tanam I', 'Musim Tanam II', 'Musim Tanam III'],
+                datasets: [
+                    {
+                        label: 'Padi',
+                        data: [6, 5.8, 6.3],
+                        backgroundColor: palette[0]
+                    },
+                    {
+                        label: 'Jagung',
+                        data: [6.5, 6.4, 7.1],
+                        backgroundColor: palette[1]
+                    },
+                    {
+                        label: 'Singkong',
+                        data: [26, 28, 24],
+                        backgroundColor: palette[2]
+                    },
+                    {
+                        label: 'Pisang',
+                        data: [1.6, 1.4, 1.7],
+                        backgroundColor: palette[3]
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
+                    },
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151',
+                            font: { weight: '600' }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        stacked: true,
+                        ticks: { color: '#374151' },
+                        grid: { display: false }
+                    },
+                    y: {
+                        stacked: true,
+                        beginAtZero: true,
+                        ticks: { color: '#374151' },
+                        grid: { color: '#e5e7eb' }
+                    }
+                }
+            }
+        });
+
+
+        // ---------- Infografis Layanan Publik
+        // Donut Chart - Aksesibilitas Layanan Publik
+        new Chart(document.getElementById('chartAkses'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Mudah', 'Sedang', 'Sulit'],
+                datasets: [{
+                    data: [16, 3, 1],
+                    backgroundColor: ['#10b981', '#facc15', '#ef4444']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'bottom',
+                        labels: {
+                            color: '#374151',
+                            font: { weight: '600' }
+                        }
+                    }
+                }
+            }
+        });
+
+    </script>
+
+</body>
+
+</html>
