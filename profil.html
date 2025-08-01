@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="border-b-2 border-white font-bold">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10 font-bold">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- Konten Profil -->
+    <main class="space-y-28 px-4 md:px-8 py-16 bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- Section: Sejarah Desa -->
+        <section class="max-w-6xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden ring-1 ring-gray-200 md:flex">
+            <div
+                class="md:w-1/2 bg-gradient-to-br from-[#9b1e15] to-[#6e140f] text-white p-10 flex flex-col justify-center">
+                <h2 class="text-3xl font-bold mb-4">Sejarah Desa</h2>
+                <p class="leading-relaxed text-lg">
+                    Desa jatinom, dari nama yang tertera ini, menurut tokoh desa yang sudah tua sebagai sumber informasinya menerangkan 
+                    bahwa Jatinom berasal dari pemberian nama dari nenek monyang. Konon katanya, Desa Jatinom dulu ditumbuhi pohon jati 
+                    yang sangat banyak dan masih muda, sehingga oleh masyarakat banyak dinamakan Desa Jatinom. Desa Jatinom 
+                    pertama kali dipimpin oleh seorang Kepala Desa bernama Bp. Sastro Sukaryo dari tahun 1930 s/d 1974, beliau dibantu 
+                    oleh seorang sekretaris desa yang bernama Wiryo Wijoyo sampai dengan tahun 1966. Dalam perkembangannya, desa ini 
+                    mulai banyak mengalami perubahan baik struktur pemerintahannya sampai dengan masyarakatnya. Sejak berdiri sebagai 
+                    desa, Jatinom memiliki 7 Dusun yaitu Dusun Jatinom, Dusun Selorejo, Nglancing, Dusun Wates, Dusun Mojoroto, Dusun 
+                    Tulakan, dan Dusun Ngemplak.
+                </p>
+            </div>
+            <div
+                class="md:w-1/2 p-10 flex items-center bg-[url('gambar/sejarah.png')] bg-contain bg-no-repeat bg-center min-h-[300px]">
+            </div>
+        </section>
+
+        <!-- Section: Identitas Desa -->
+        <section class="max-w-6xl mx-auto">
+            <div class="bg-white rounded-3xl shadow-xl ring-1 ring-gray-200 p-10">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-6">Identitas Desa</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-lg text-gray-700">
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Nama Desa:</strong> Jatinom
+                    </div>
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Kecamatan:</strong> Sidoharjo
+                    </div>
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Kabupaten:</strong> Wonogiri
+                    </div>
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Provinsi:</strong> Jawa Tengah
+                    </div>
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Kode Pos:</strong> 57481
+                    </div>
+                    <div
+                        class="bg-[#fef7f7] p-5 rounded-xl shadow-sm hover:shadow-md transition
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Jumlah Dusun:</strong> 7 Dusun
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section: Visi Misi -->
+        <section
+            class="max-w-6xl mx-auto rounded-3xl overflow-hidden shadow-xl ring-1 ring-gray-200 grid md:grid-cols-2 bg-white">
+
+            <!-- VISI -->
+            <div
+                class="bg-gradient-to-br from-[#9b1e15] to-[#6e140f] text-white p-10 flex flex-col justify-center md:justify-between gap-4">
+                <div>
+                    <div class="flex items-center gap-4 mb-4">
+                        <img src="gambar/target.png" alt="Visi Icon" class="w-10 h-10" />
+                        <h3 class="text-3xl font-bold tracking-wide">Visi</h3>
+                    </div>
+                    <blockquote class="text-xl font-medium leading-relaxed border-l-4 pl-4 border-white italic mt-6">
+                        “Bersama membangun Jatinom SUKSES, Beriman, Berbudaya, Berkeadilan, Berdaya Saing dan Demokratis.”
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- MISI -->
+            <div class="bg-[#fff9f9] p-10 flex flex-col justify-center">
+                <div class="flex items-center gap-4 mb-4 text-[#9b1e15]">
+                    <img src="gambar/misi.png" alt="Misi Icon" class="w-10 h-10" />
+                    <h3 class="text-3xl font-bold tracking-wide">Misi</h3>
+                </div>
+                <ol class="list-decimal pl-6 space-y-4 text-gray-800 text-lg">
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Mengelola pemerintahan dengan membangun tata kelola pemerintahan yang bersih, 
+                        efektif dan demokratis terpercaya yang meliputi unsur manajemen keuangan, manajemen 
+                        pelayanan dan manajemen hukum dan pengawasan dengan semboyan SUKSES sebagai pola 
+                        managerial yang memiliki makna sebagaimana penjelasan singkat dalam Visi;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Meningkatkan kualitas hidup manusia Jatinom melalui peningkatan kualitas pendidikan 
+                        dan pelatihan dengan Program Jatinom Pintar, peningkatan kesejahteraan masyarakat 
+                        dengan Program Jatinom Kerja Jatinom Sejahtera, peningkatan kualitas kesehatan dengan 
+                        program Jatinom Sehat serta Jatinom beriman sesuai dengan agama dan keyakinan masing-
+                        masing mengedepankan sikap toleransi antar umat;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Membangun dan memberdayakan Jatinom dengan memperkuat prioritas pembangunan, kualitas 
+                        sumber daya manusia untuk daya saing yang kompetitif;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Meningkatkan produktifitas rakyat Jatinom dan daya saing di segala bidang sehingga 
+                        Jatinom dapat maju dan bangkit bersama Desa-Desa lain;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Mengembangkan dan melestarikan adat dan budaya serta tradisi di masyarakat Jatinom;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Pemerataan pembangunan yang berkeadilan di segala bidang;
+                    </li>
+                    <li class="hover:translate-x-1 transition duration-200">
+                        Mengembangkan seluruh potensi-potensi didalam jiwa dan raganya Jatinom untuk 
+                        kemaslahatan rakyat Jatinom.
+                    </li>
+                </ol>
+            </div>
+
+        </section>
+
+
+        <!-- Section: Peta Lokasi -->
+        <section class="max-w-6xl mx-auto relative bg-white rounded-3xl shadow-xl overflow-hidden ring-1 ring-gray-200">
+            <div class="bg-[#fafafa] p-10">
+                <h2 class="text-3xl font-bold text-[#9b1e15] mb-4">Peta Lokasi Desa Jatinom</h2>
+                <p class="text-gray-700 text-lg mb-6 max-w-5xl">
+                    Peta berikut menunjukkan lokasi strategis Desa Jatinom, lengkap dengan batas wilayah, fasilitas
+                    umum, dan pemukiman warga.
+                </p>
+                <div class="max-w-5xl mx-auto rounded-xl overflow-hidden shadow-lg">
+                <iframe class="w-full h-96 border-0"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.858611198075!2d110.92345631533224!3d-7.809780494382211!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7b9b14b0c4fded%3A0x30c9242dc6c70d1a!2sJatinom%2C%20Sidoharjo%2C%20Wonogiri!5e0!3m2!1sen!2sid!4v1710000000000!5m2!1sen!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            </div>
+        </section>
+
+        <!-- Section: Batas dan Statistik Desa -->
+        <section class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 md:px-0 py-16 pt-3">
+
+            <!-- BAGIAN KIRI: Batas Wilayah -->
+            <div class="bg-white rounded-3xl shadow-xl ring-1 ring-gray-200 p-8">
+                <div class="flex items-center gap-4 mb-6 text-[#9b1e15]">
+                    <img src="gambar/batas-wilayah.png" alt="Batas Icon" class="w-10 h-10" />
+                    <h2 class="text-2xl font-bold">Batas Wilayah</h2>
+                </div>
+                <div class="grid grid-cols-2 gap-4 text-lg text-gray-700">
+                    <div
+                        class="bg-[#fdf2f2] p-4 rounded-xl shadow-sm hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Utara:</strong> Desa Nungkulan, Desa Giriyoso
+                    </div>
+                    <div
+                        class="bg-[#fdf2f2] p-4 rounded-xl shadow-sm hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Timur:</strong> Desa Pandeyan
+                    </div>
+                    <div
+                        class="bg-[#fdf2f2] p-4 rounded-xl shadow-sm hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Selatan:</strong> Desa Tremes
+                    </div>
+                    <div
+                        class="bg-[#fdf2f2] p-4 rounded-xl shadow-sm hover:shadow-md transition
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <strong>Barat:</strong> Desa Sidoharjo
+                    </div>
+                </div>
+            </div>
+
+            <!-- BAGIAN KANAN: Statistik -->
+            <div class="bg-white rounded-3xl shadow-xl ring-1 ring-gray-200 p-8">
+                <div class="flex items-center gap-4 mb-6 text-[#9b1e15]">
+                    <img src="gambar/statistik.png" alt="Statistik Icon" class="w-10 h-10" />
+                    <h2 class="text-2xl font-bold">Statistik Desa</h2>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-lg text-gray-700">
+                    <div
+                        class="bg-[#fef6f6] p-5 rounded-xl shadow-sm hover:shadow-md transition text-center
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/area.png" alt="Luas Icon" class="w-10 h-10 mx-auto mb-2" />
+                        <div><strong>Luas Wilayah</strong></div>
+                        <div>± 321 Ha</div>
+                    </div>
+                    <div
+                        class="bg-[#fef6f6] p-5 rounded-xl shadow-sm hover:shadow-md transition text-center
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                        <img src="gambar/populasi.png" alt="Penduduk Icon" class="w-10 h-10 mx-auto mb-2" />
+                        <div><strong>Jumlah Penduduk</strong></div>
+                        <div>± 3.487 Jiwa</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Potensi Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="border-b-2 border-white font-bold">Potensi</a>
+                <a href="layanan.html" class="hover:underline">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10 font-bold">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- Konten Potensi Desa -->
+    <main class="space-y-12 md bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- Pembuka: Slideshow Potensi -->
+        <section class="slideshow-section relative w-full h-[500px] md:h-[620px] overflow-hidden">
+            <!-- Background Images (Slideshow container) -->
+            <div id="slideshow" class="absolute inset-0 z-0">
+                <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+                    style="background-image: url('gambar/potensi1.jpeg'); opacity: 1;"></div>
+                <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+                    style="background-image: url('gambar/potensi2.jpeg'); opacity: 0;"></div>
+                <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+                    style="background-image: url('gambar/potensi3.jpeg'); opacity: 0;"></div>
+                <div class="absolute inset-0 bg-cover bg-center transition-opacity duration-1000 ease-in-out"
+                    style="background-image: url('gambar/potensi4.jpeg'); opacity: 0;"></div>
+            </div>
+
+            <!-- Overlay -->
+            <div class="absolute inset-0 bg-black/40 z-10"></div>
+
+            <!-- Teks -->
+            <div class="relative z-20 flex flex-col items-center justify-center h-full text-center px-6">
+                <h2 class="text-3xl md:text-5xl font-bold text-white drop-shadow-lg">Potensi Unggulan Desa Jatinom</h2>
+                <p class="text-md md:text-lg text-gray-100 max-w-2xl mt-4 drop-shadow">
+                    Desa Jatinom memiliki kekayaan alam, sumber daya manusia, serta wisata yang menjadi modal utama
+                    dalam pembangunan berkelanjutan. Mari telusuri potensi yang kami miliki.
+                </p>
+            </div>
+        </section>
+
+        <!-- Potensi Pertanian dan Peternakan -->
+        <section class="max-w-6xl mx-auto pt-20 px-4 space-y-12">
+            <div class="text-center">
+                <h3 class="text-3xl font-semibold text-[#9b1e15]">Potensi Pertanian & Peternakan</h3>
+                <p class="text-gray-700 mt-2">Pertanian dan peternakan menjadi tulang punggung utama ekonomi warga
+                    Jatinom.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/padi-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Padi" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Padi</h4>
+                        <p class="text-gray-600 text-sm">Sebanyak <strong>142 Ha</strong> lahan dimanfaatkan untuk
+                            menanam padi.</p>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/singkong-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Singkong" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Singkong</h4>
+                        <p class="text-gray-600 text-sm">Sebanyak <strong>28 Ha</strong> lahan dimanfaatkan untuk
+                            menanam singkong.</p>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/jagung-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Jagung" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Jagung</h4>
+                        <p class="text-gray-600 text-sm">Sebanyak <strong>17 Ha</strong> lahan dimanfaatkan untuk
+                            menanam jagung.</p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/ayam-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Ayam" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Ayam</h4>
+                        <p class="text-gray-600 text-sm">Populasi ternak ayam mencapai <strong>1.766 ekor</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/kambing-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Kambing" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Kambing</h4>
+                        <p class="text-gray-600 text-sm">Populasi ternak kambing mencapai <strong>264 ekor</strong>.</p>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md flex gap-4 items-start hover:shadow-xl 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/sapi-potensi.png" class="w-16 h-16 object-cover rounded-md" alt="Sapi" />
+                    <div>
+                        <h4 class="text-lg font-semibold text-[#9b1e15]">Sapi</h4>
+                        <p class="text-gray-600 text-sm">Populasi ternak sapi mencapai <strong>247 ekor</strong>.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Potensi UMKM dan Ekonomi Kreatif -->
+        <section class="max-w-6xl mx-auto pt-20 px-4 space-y-8">
+            <div class="text-center">
+                <h3 class="text-3xl font-semibold text-[#9b1e15]">UMKM & Ekonomi Kreatif</h3>
+                <p class="text-gray-700">Warga Jatinom memiliki semangat wirausaha melalui produk khas desa.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Item 1 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/ayampanggang-potensi.jpg" alt="Ayam Panggang" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Ayam Panggang</h4>
+                        <p class="text-sm text-gray-600"> Olahan ayam khas desa yang dimasak dengan bumbu tradisional
+                            dan
+                            proses pemanggangan, menjadi menu andalan UMKM kuliner lokal.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                maps.google.com</em></p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/kacangmete-potensi.jpg" alt="Kacang Mete" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Kacang Mete</h4>
+                        <p class="text-sm text-gray-600">Produk olahan kacang mete dari petani lokal, dijual sebagai
+                            camilan
+                            khas desa dan menjadi komoditas unggulan ekonomi kreatif.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                maps.google.com</em></p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/tempe-potensi.jpg" alt="Olahan Tempe" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Olahan Tempe</h4>
+                        <p class="text-sm text-gray-600">Tempe rumahan hasil fermentasi kedelai dibungkus menggunakan
+                            daun
+                            jati agar memiliki rasa dan aroma yang khas.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                wordpress.com</em></p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/peyek-potensi.jpg" alt="Peyek Kacang" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Peyek Kacang</h4>
+                        <p class="text-sm text-gray-600">Camilan tradisional berbahan dasar tepung beras dan kacang
+                            tanah,
+                            diproduksi oleh ibu-ibu rumah tangga sebagai usaha mikro kreatif.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                maps.google.com</em></p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/mieayam-potensi.jpg" alt="Mie Ayam" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Mie Ayam</h4>
+                        <p class="text-sm text-gray-600">Mie ayam racikan warga lokal yang menjadi favorit di warung
+                            desa,
+                            dibuat dengan bumbu khas dan topping ayam melimpah.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                maps.google.com</em></p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div
+                    class="bg-white border shadow rounded-xl overflow-hidden hover:shadow-lg 
+                    transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <img src="gambar/bakso-potensi.jpg" alt="Bakso" class="h-40 w-full object-cover" />
+                    <div class="p-4">
+                        <h4 class="text-md font-bold text-[#9b1e15]">Bakso</h4>
+                        <p class="text-sm text-gray-600">Produk bakso buatan warga yang dijual di kios dan gerobak
+                            keliling,
+                            menawarkan cita rasa khas dengan bahan segar dan halal.</p> <br>
+                        <p class="text-sm text-gray-600 text-center"><em>Gambar hanya ilustrasi <br> sumber:
+                                maps.google.com</em></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Potensi Wisata Alam dan Budaya -->
+        <section class="max-w-6xl mx-auto pt-20 px-4 space-y-8">
+            <div class="text-center">
+                <h3 class="text-3xl font-semibold text-[#9b1e15]">Wisata Alam & Budaya</h3>
+                <p class="text-gray-700">Keindahan alam desa Jatinom yang masih terjaga dan menjadi
+                    kebanggaan warga.</p>
+            </div>
+
+            <!-- Hero Card Wisata -->
+            <div class="bg-white rounded-xl shadow-md border overflow-hidden md:flex">
+                <!-- Foto Wisata -->
+                <img src="gambar/airterjun-njerogangin-potensi.png" alt="Air Terjun Njerogangin"
+                    class="w-full md:w-1/2 h-64 md:h-auto object-cover">
+
+                <!-- Konten Wisata -->
+                <div class="p-6 flex flex-col justify-center space-y-3 md:w-1/2">
+                    <h4 class="text-2xl font-semibold text-[#9b1e15]">Air Terjun Njerogangin</h4>
+                    <p class="text-gray-700 text-sm">
+                        Air terjun ini terletak di Desa Jatinom, Kecamatan Sidoharjo, Wonogiri. Memiliki pesona alami
+                        yang tersembunyi dan suasana yang tenang, cocok untuk pencinta alam dan petualang.
+                    </p>
+                    <ul class="text-sm text-gray-600 list-disc list-inside">
+                        <li>Lokasi: Dusun Jatinom, Desa Jatinom</li>
+                        <li>Akses: Jalan setapak dan medan alamiah</li>
+                        <li>Daya tarik: Keaslian alam, suasana sejuk, dan pemandangan asri</li>
+                    </ul>
+                    <div>
+                        <span class="inline-block bg-[#9b1e15] text-white text-xs px-3 py-1 rounded-full mt-2">
+                            Wisata Alam Unggulan
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Statistik dan Peta Potensi Desa -->
+        <section class="max-w-6xl mx-auto px-4 pt-20 text-center space-y-12">
+            <!-- Judul -->
+            <div>
+                <h3 class="text-3xl font-bold text-[#9b1e15]">Data Singkat Potensi Desa</h3>
+                <p class="text-gray-700 mt-2">Gambaran umum kekayaan potensi Desa Jatinom dalam angka dan visual.</p>
+            </div>
+
+            <!-- Statistik -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div
+                    class="bg-white p-6 rounded-xl shadow text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-3xl font-bold text-[#9b1e15]">190 Ha</div>
+                    <p class="text-sm text-gray-600">Lahan Pertanian</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-3xl font-bold text-[#9b1e15]">60+</div>
+                    <p class="text-sm text-gray-600">UMKM Aktif</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-3xl font-bold text-[#9b1e15]">1</div>
+                    <p class="text-sm text-gray-600">Destinasi Wisata</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow text-center
+                transition transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:ring-2 hover:ring-[#9b1e15]/30">
+                    <div class="text-3xl font-bold text-[#9b1e15]">495+</div>
+                    <p class="text-sm text-gray-600">Petani Aktif</p>
+                </div>
+            </div>
+
+            <!-- Peta Potensi Desa -->
+            <div class="w-full">
+                <h4 class="text-xl font-semibold text-[#9b1e15] mt-8 mb-4">Peta Wilayah & Potensi</h4>
+                <div class="w-full max-w-4xl mx-auto rounded-xl overflow-hidden shadow-lg">
+                    <img src="gambar/peta-potensi.png" alt="Peta Potensi Desa Jatinom"
+                        class="w-full h-auto object-cover" />
+                </div>
+                <p class="text-sm text-gray-600 mt-2">Peta persebaran lokasi pertanian, UMKM, dan wisata di wilayah Desa
+                    Jatinom.</p>
+            </div>
+        </section>
+
+
+        <!-- Penutup -->
+        <section class="text-center py-16">
+            <h3 class="text-xl text-[#9b1e15] font-semibold">Tertarik dengan Potensi Kami?</h3>
+            <p class="text-gray-600 mb-4">Mari bangun kolaborasi atau kunjungi langsung Desa Jatinom.</p>
+            <a href="#kontak"
+                class="inline-block bg-[#9b1e15] text-white px-6 py-2 rounded hover:bg-red-800 transition">Hubungi
+                Kami</a>
+        </section>
+
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul id="kontak" class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa
+                        Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <!-- Image Overlay Pembuka -->
+    <script>
+        const slides = document.querySelectorAll('#slideshow > div');
+        let currentSlide = 0;
+        let slideInterval;
+
+        // Fungsi untuk mengganti ke slide berikutnya
+        function nextSlide() {
+            slides[currentSlide].style.opacity = 0;
+            currentSlide = (currentSlide + 1) % slides.length;
+            slides[currentSlide].style.opacity = 1;
+        }
+
+        // Jalankan interval otomatis
+        function startSlideShow() {
+            slideInterval = setInterval(nextSlide, 4000); // 4 detik
+        }
+
+        // Hentikan dan restart saat klik
+        function manualAdvance() {
+            clearInterval(slideInterval); // stop sejenak
+            nextSlide(); // ganti slide manual
+            startSlideShow(); // lanjutkan interval
+        }
+
+        // Mulai otomatis saat halaman load
+        startSlideShow();
+
+        // Tambahkan event klik pada seluruh section slideshow
+        const slideshowSection = document.querySelector('section'); // atau lebih spesifik: document.querySelector('.slideshow-section');
+        slideshowSection.addEventListener('click', manualAdvance);
+    </script>
+
+
+</body>
+
+</html>

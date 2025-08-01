@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layanan Desa Jatinom</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f6f6f6;
+        }
+
+        .bg-maroon {
+            background-color: #9b1e15;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
+</head>
+
+<body class="text-gray-800">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-maroon shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Logo dan Nama Desa -->
+            <div class="flex items-center space-x-3">
+                <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 object-contain rounded p-1" />
+                <div class="text-white leading-tight">
+                    <h1 class="text-base font-bold md:text-lg">Desa Jatinom</h1>
+                    <span class="text-xs md:text-sm">Kabupaten Wonogiri</span>
+                </div>
+            </div>
+
+            <!-- Tombol Toggle Mobile -->
+            <button class="md:hidden text-white text-2xl" id="menu-toggle">☰</button>
+
+            <!-- Navbar Desktop -->
+            <nav class="hidden md:flex space-x-6 text-sm font-medium text-white">
+                <a href="beranda.html" class="hover:underline">Beranda</a>
+                <a href="profil.html" class="hover:underline">Profil</a>
+                <a href="infografis.html" class="hover:underline">Infografis</a>
+                <a href="kelembagaan.html" class="hover:underline">Kelembagaan</a>
+                <a href="potensi.html" class="hover:underline">Potensi</a>
+                <a href="layanan.html" class="border-b-2 border-white font-bold">Layanan</a>
+                <a href="kknt.html" class="hover:underline">KKNT-IPB</a>
+            </nav>
+        </div>
+
+        <!-- Navbar Mobile -->
+        <nav id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-maroon text-white text-sm font-medium">
+            <a href="beranda.html" class="block py-1 border-b border-white/10">Beranda</a>
+            <a href="profil.html" class="block py-1 border-b border-white/10">Profil</a>
+            <a href="infografis.html" class="block py-1 border-b border-white/10">Infografis</a>
+            <a href="kelembagaan.html" class="block py-1 border-b border-white/10">Kelembagaan</a>
+            <a href="potensi.html" class="block py-1 border-b border-white/10">Potensi</a>
+            <a href="layanan.html" class="block py-1 border-b border-white/10 font-bold">Layanan</a>
+            <a href="kknt.html" class="block py-1">KKNT-IPB</a>
+        </nav>
+    </header>
+
+
+    <!-- Konten Layanan Desa -->
+    <main class="space-y-12 md bg-gradient-to-b from-[#fefefe] to-[#f2f2f2]">
+
+        <!-- Hero Section -->
+        <section class="bg-[#f9f9f9] py-20 px-6">
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-10">
+
+                <!-- Kolom Teks -->
+                <div class="text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-extrabold text-[#9b1e15] leading-tight">Layanan Publik Desa
+                        Jatinom</h1>
+                    <p class="mt-4 text-gray-700 text-base md:text-lg max-w-md">
+                        Kami menyediakan berbagai layanan publik untuk mempermudah keperluan administrasi warga secara
+                        cepat, mudah, dan transparan.
+                    </p>
+                    <a href="#alur"
+                        class="inline-block mt-6 bg-[#9b1e15] text-white px-6 py-2 rounded hover:bg-red-800 transition">
+                        Lihat Alur Layanan
+                    </a>
+                </div>
+
+                <!-- Kolom Gambar -->
+                <div class="flex justify-center md:justify-end">
+                    <div class="w-full max-w-md rounded-xl overflow-hidden shadow-md">
+                        <img src="gambar/hero-layanan.jpg" alt="Layanan Desa" class="object-cover w-full h-64 md:h-80">
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Jenis Layanan -->
+        <section class="bg-[#f2f2f2] py-20 px-6">
+            <div class="text-center mb-12">
+                <h3 class="text-3xl font-bold text-[#9b1e15]">Jenis Layanan</h3>
+                <p class="text-gray-600 mt-2">Temukan pelayanan yang Anda butuhkan.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- 1. Administrasi Kependudukan -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Administrasi Kependudukan</h4>
+                    <p class="text-sm text-gray-600">KTP, KK, Surat Pindah, Akta Kelahiran.</p>
+                </div>
+
+                <!-- 2. Pengajuan Surat Pengantar -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Pengajuan Surat Pengantar</h4>
+                    <p class="text-sm text-gray-600">Domisili, SKTM, Pengantar Nikah, dll.</p>
+                </div>
+
+                <!-- 3. Perizinan Usaha -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M9 17v-6h6v6m-6 0h6m-3-3v3m6-7a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Perizinan Usaha</h4>
+                    <p class="text-sm text-gray-600">Pembuatan NIB dan legalitas UMKM.</p>
+                </div>
+
+                <!-- 4. Layanan Pertanahan -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Layanan Pertanahan</h4>
+                    <p class="text-sm text-gray-600">Informasi batas tanah, pengantar sertifikat.</p>
+                </div>
+
+                <!-- 5. Layanan Kesehatan -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Layanan Kesehatan</h4>
+                    <p class="text-sm text-gray-600">Jadwal posyandu dan layanan konsultasi.</p>
+                </div>
+
+                <!-- 6. Pengaduan Masyarakat -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M18.364 5.636l-1.414 1.414A9 9 0 115.636 5.636l1.414-1.414A11 11 0 1018.364 5.636z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Pengaduan Masyarakat</h4>
+                    <p class="text-sm text-gray-600">Laporkan permasalahan langsung ke aparat desa.</p>
+                </div>
+
+                <!-- 7. Bantuan Sosial -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Bantuan Sosial</h4>
+                    <p class="text-sm text-gray-600">Informasi dan pengajuan bantuan PKH, BPNT, BLT.</p>
+                </div>
+
+                <!-- 8. Layanan Pendidikan -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0v6" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Layanan Pendidikan</h4>
+                    <p class="text-sm text-gray-600">Rekomendasi beasiswa dan surat keterangan sekolah.</p>
+                </div>
+
+                <!-- 9. Permohonan Izin Keramaian -->
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 group">
+                    <div
+                        class="w-12 h-12 bg-[#9b1e15]/10 text-[#9b1e15] flex items-center justify-center rounded-full mb-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M4 6h16M5 14h14M6 18h12" />
+                        </svg>
+                    </div>
+                    <h4 class="text-lg font-semibold mb-2">Permohonan Izin Keramaian</h4>
+                    <p class="text-sm text-gray-600">Izin hajatan, event desa, dan kegiatan masyarakat lainnya.</p>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- Alur Pengajuan Layanan -->
+        <section class="bg-white py-20 px-6">
+            <div class="text-center mb-12">
+                <h3 id="alur" class="text-3xl font-bold text-[#9b1e15]">Alur Pengajuan Layanan</h3>
+            </div>
+
+            <div class="flex flex-col md:flex-row justify-center items-center gap-8 max-w-5xl mx-auto">
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-[#9b1e15] text-white font-bold">
+                        1</div>
+                    <p class="mt-2 text-sm font-medium">Datang ke kantor desa</p>
+                </div>
+                <div class="w-6 h-1 bg-[#9b1e15] md:w-20"></div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-[#9b1e15] text-white font-bold">
+                        2</div>
+                    <p class="mt-2 text-sm font-medium">Verifikasi</p>
+                </div>
+                <div class="w-6 h-1 bg-[#9b1e15] md:w-20"></div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-[#9b1e15] text-white font-bold">
+                        3</div>
+                    <p class="mt-2 text-sm font-medium">Proses</p>
+                </div>
+                <div class="w-6 h-1 bg-[#9b1e15] md:w-20"></div>
+                <div class="flex flex-col items-center text-center">
+                    <div
+                        class="w-12 h-12 flex items-center justify-center rounded-full bg-[#9b1e15] text-white font-bold">
+                        4</div>
+                    <p class="mt-2 text-sm font-medium">Cetak / Ambil</p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Jadwal & Lokasi Pelayanan -->
+        <section class="bg-white py-20 px-6">
+            <div class="max-w-6xl mx-auto space-y-12">
+
+                <!-- Judul -->
+                <div class="text-center">
+                    <h3 class="text-3xl font-bold text-[#9b1e15]">Jadwal & Lokasi Pelayanan</h3>
+                    <p class="text-gray-600 mt-2">Informasi waktu, tempat layanan, dan kontak desa.</p>
+                </div>
+
+                <!-- Grid Konten -->
+                <div class="grid md:grid-cols-3 gap-8">
+
+                    <!-- Jadwal Pelayanan -->
+                    <div class="bg-[#fefefe] rounded-xl shadow-md p-6 border border-gray-200">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] mb-4">Jadwal Layanan</h4>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li><strong>Senin – Jumat:</strong> 08.00 – 14.00 WIB</li>
+                            <li><strong>Sabtu & Minggu:</strong> Tutup</li>
+                        </ul>
+                    </div>
+
+                    <!-- Lokasi Layanan -->
+                    <div class="bg-[#fefefe] rounded-xl shadow-md p-6 border border-gray-200">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] mb-4">Lokasi Pelayanan</h4>
+                        <ul class="text-sm text-gray-700 space-y-3">
+                            <li>
+                                <span class="font-medium"><strong>Kantor Desa Jatinom</strong></span><br />
+                                Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Kontak Petugas -->
+                    <div class="bg-[#fefefe] rounded-xl shadow-md p-6 border border-gray-200">
+                        <h4 class="text-xl font-semibold text-[#9b1e15] mb-4">Kontak Desa</h4>
+                        <ul class="text-sm text-gray-700 space-y-3">
+                            <li>
+                                <strong>Nomor Telepon Desa:</strong><br />
+                                📞 0856-0062-0494 <br>
+                            </li>
+                            <li>
+                                <strong>Email Desa:</strong> <br>
+                                📧 kantordesajatinom2011@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-[#fefefe] py-20 px-6">
+            <div class="max-w-5xl mx-auto">
+                <h3 class="text-3xl font-bold text-[#9b1e15] text-center mb-10">Pertanyaan Umum</h3>
+
+                <div class="space-y-4">
+
+                    <!-- FAQ Item -->
+                    <details class="bg-white p-5 rounded-xl shadow group open:ring-2 open:ring-[#9b1e15]/30 transition">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer text-[#9b1e15] font-semibold text-lg">
+                            <span><svg class="inline w-5 h-5 mr-2 text-[#9b1e15]" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M12 4v16m8-8H4" />
+                                </svg>Bagaimana cara mengajukan surat domisili?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-gray-500" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700 text-sm pl-7">Datang ke balai desa dengan membawa fotokopi KTP dan
+                            KK, lalu isi formulir yang tersedia.</p>
+                    </details>
+
+                    <!-- FAQ Item -->
+                    <details class="bg-white p-5 rounded-xl shadow group open:ring-2 open:ring-[#9b1e15]/30 transition">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer text-[#9b1e15] font-semibold text-lg">
+                            <span><svg class="inline w-5 h-5 mr-2 text-[#9b1e15]" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M12 4v16m8-8H4" />
+                                </svg>Apakah bisa mengurus NIB secara online?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-gray-500" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700 text-sm pl-7">Ya, warga bisa dibimbing untuk pembuatan NIB melalui
+                            layanan pendampingan desa.</p>
+                    </details>
+
+                    <!-- FAQ Item -->
+                    <details class="bg-white p-5 rounded-xl shadow group open:ring-2 open:ring-[#9b1e15]/30 transition">
+                        <summary
+                            class="flex items-center justify-between cursor-pointer text-[#9b1e15] font-semibold text-lg">
+                            <span><svg class="inline w-5 h-5 mr-2 text-[#9b1e15]" fill="none" stroke="currentColor"
+                                    stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M12 4v16m8-8H4" />
+                                </svg>Berapa lama proses pembuatan surat keterangan?</span>
+                            <svg class="w-5 h-5 transition-transform group-open:rotate-180 text-gray-500" fill="none"
+                                stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </summary>
+                        <p class="mt-3 text-gray-700 text-sm pl-7">Biasanya 1–2 hari kerja setelah verifikasi dokumen
+                            lengkap dilakukan.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CTA Section -->
+        <section
+            class="bg-gradient-to-br from-[#9b1e15] to-[#b9472d] py-20 px-6 text-white text-center relative overflow-hidden">
+            <!-- Dekorasi -->
+            <svg class="absolute top-0 left-0 w-full h-20" viewBox="0 0 1440 320">
+                <path fill="#ffffff22" fill-opacity="1"
+                    d="M0,128L48,122.7C96,117,192,107,288,117.3C384,128,480,160,576,176C672,192,768,192,864,176C960,160,1056,128,1152,128C1248,128,1344,160,1392,176L1440,192L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+                </path>
+            </svg>
+
+            <div class="relative z-10 max-w-3xl mx-auto">
+                <h3 class="text-3xl font-bold mb-4">Butuh Bantuan Layanan Desa?</h3>
+                <p class="text-sm text-white/90 mb-6">Kami siap membantu Anda dalam pengurusan administrasi dan layanan
+                    lainnya. Silakan hubungi perangkat desa melalui tombol berikut.</p>
+                <a href="#kontak"
+                    class="inline-block bg-white text-[#9b1e15] font-semibold px-6 py-3 rounded shadow hover:bg-gray-200 transition">Hubungi
+                    Kami</a>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white border-t mt-20">
+
+        <!-- Bagian Atas: Informasi Kontak -->
+        <div class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-gray-700">
+
+            <!-- Kolom Kiri: Logo + Deskripsi -->
+            <div>
+                <div class="flex items-center space-x-3 mb-4">
+                    <img src="gambar/logo-wonogiri.png" alt="Logo Desa" class="w-12 h-12 rounded object-contain" />
+                    <div>
+                        <h2 class="text-lg font-bold text-[#9b1e15]">Desa Jatinom</h2>
+                        <p class="text-sm text-gray-500">Kabupaten Wonogiri</p>
+                    </div>
+                </div>
+                <p class="text-sm leading-relaxed">
+                    Website resmi Desa Jatinom sebagai media informasi, pelayanan publik, dan pemetaan potensi desa.
+                </p>
+            </div>
+
+            <!-- Kolom Tengah: Kontak -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Kontak Desa</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>📍 Jl. Ngadirojo/Wonogiri-Ponorogo No.7, Jatinom, Kec. Sidoharjo, Kabupaten Wonogiri, Jawa Tengah, 57481</li>
+                    <li>📞 0856-0062-0494</li>
+                    <li>📧 kantordesajatinom2011@gmail.com</li>
+                </ul>
+            </div>
+
+            <!-- Kolom Kanan: Jam & Tautan -->
+            <div>
+                <h3 class="text-md font-semibold text-[#9b1e15] mb-3">Jam Operasional</h3>
+                <ul id="kontak" class="space-y-2 text-sm">
+                    <li>Senin – Jumat: 08.00 – 14.00 WIB</li>
+                    <li>Sabtu – Minggu: Libur</li>
+                </ul>
+
+                <!-- Optional: Tautan cepat -->
+                <!--
+            <div class="mt-5">
+                <h4 class="font-semibold text-sm mb-2">Tautan Cepat</h4>
+                <ul class="text-sm space-y-1">
+                    <li><a href="layanan.html" class="hover:underline">Layanan Desa</a></li>
+                    <li><a href="profil.html" class="hover:underline">Profil Desa</a></li>
+                </ul>
+            </div>
+            -->
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="bg-[#9b1e15] text-white text-sm text-center py-4">
+            &copy; 2025 <span class="font-semibold">Desa Jatinom</span> – Sidoharjo, Wonogiri.
+        </div>
+    </footer>
+
+    <script>
+        const toggleBtn = document.getElementById('menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+        toggleBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
